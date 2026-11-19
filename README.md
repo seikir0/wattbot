@@ -30,8 +30,8 @@ Ablation on `train_QA.csv` (41 questions), using the competition's score: `0.75 
 
 | Configuration | answer_value | ref_id | is_na | Score |
 |---|---|---|---|---|
-| Rule-based baseline (BM25 + regex, no LLM) | 0.195 | 0.317 | 0.829 | 0.228 |
-| + LLM generation (gpt-4o-mini) | 0.300 | 0.400 | 0.400 | 0.300 |
+| Rule-based baseline (BM25 + regex, no LLM) | 0.195 | 0.317 | 0.829 | 0.277 |
+| + LLM generation (gpt-4o-mini) | 0.300 | 0.400 | 0.400 | 0.325 |
 | + Improved prompt + query expansion | 0.512 | 0.732 | 0.902 | 0.584 |
 | + PyMuPDF4LLM table extraction | 0.756 | 0.919 | 1.000 | **0.805** |
 | Kaggle private leaderboard | | | | **0.812** |
