@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WattBot RAG</title>
+<style>
+  :root { --fg:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea; --bg:#fafafa; --accent:#2f5d8a; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:#fff; }
+  main { max-width: 860px; margin: 0 auto; padding: 40px 20px 80px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  form { display:flex; gap:8px; }
+  input[type=text], input[type=password] { flex:1; padding:10px 12px; border:1px solid var(--line); border-radius:6px; font:inherit; }
+  button { padding:10px 16px; border:1px solid var(--accent); background:var(--accent); color:#fff; border-radius:6px; font:inherit; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  details { margin: 12px 0 0; color: var(--muted); }
+  details .grid { display:grid; grid-template-columns: 110px 1fr; gap:8px; align-items:center; margin-top:10px; }
+  details .note { grid-column: 1 / -1; font-size: 13px; }
+  section { margin-top: 32px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0 0 10px; font-weight: 600; }
+  .examples button { display:block; width:100%; text-align:left; background:none; color:var(--fg); border:none; border-bottom:1px solid var(--line); border-radius:0; padding:9px 0; }
+  .examples button:hover { color: var(--accent); }
+  .answer { font-size: 26px; font-weight: 600; }
+  .unit { color: var(--muted); font-size: 16px; font-weight: 400; margin-left: 6px; }
+  .meta { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .blank { color: var(--muted); font-size: 18px; }
+  .explain { margin-top: 12px; }
+  .refs a { color: var(--accent); margin-right: 12px; }
+  .ev { border-top: 1px solid var(--line); padding: 12px 0; }
+  .ev .head { font-size: 13px; color: var(--muted); display:flex; justify-content:space-between; gap:12px; }
+  .ev .text { margin-top: 6px; white-space: pre-wrap; font-size: 14px; background: var(--bg); padding: 10px 12px; border-radius: 6px; }
+  .cited .head strong { color: var(--accent); }
+  .err { color: #b3261e; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>WattBot RAG</h1>
+  <p class="sub">Ask about the energy, carbon and water footprint of AI. Answers are grounded in ~30 research papers, with citations, and the system abstains when the papers don't say.</p>
+
+  <form id="ask">
+    <input type="text" id="q" placeholder="e.g. What are the estimated embodied carbon emissions per GPU?" required minlength="3" maxlength="500">
+    <button id="go" type="submit">Ask</button>
+  </form>
+
+  <details>
+    <summary>Use an LLM (your own API key)</summary>
+    <div class="grid">
+      <label for="key">API key</label><input type="password" id="key" autocomplete="off" placeholder="sk-...">
+      <label for="base">Base URL</label><input type="text" id="base" placeholder="optional, for OpenAI-compatible providers">
+      <label for="model">Model</label><input type="text" id="model" placeholder="default from config, e.g. gpt-4o-mini">
+      <p class="note">Without a key, live questions use the rule-based baseline (no LLM), which is much weaker. The key is used for this request only and is not stored.</p>
+    </div>
+  </details>
+
+  <section id="result" class="hidden"></section>
+
+  <section id="ex-wrap" class="hidden">
+    <h2>Precomputed examples</h2>
+    <div class="examples" id="examples"></div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function render(r, source) {
+  const blank = r.answer_value === "is_blank";
+  const unit = r.answer_unit && r.answer_unit !== "is_blank" ? `<span class="unit">${esc(r.answer_unit)}</span>` : "";
+  const modeLabel = r.mode === "llm" ? "LLM" : "rule-based baseline";
+  const expected = r.expected_answer_value !== undefined ? ` · expected: ${esc(r.expected_answer_value)}` : "";
+  const cited = new Set(r.ref_id || []);
+  const refs = (r.ref_id || []).map((id, i) => {
+    const url = (r.ref_url || [])[i];
+    return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(id)}</a>` : esc(id);
+  }).join("");
+
+  const evidence = (r.evidence || []).map(e => `
+    <div class="ev ${cited.has(e.doc_id) ? "cited" : ""}">
+      <div class="head"><span><strong>${esc(e.doc_id)}</strong> · ${esc(e.title)} · p.${e.pages[0]}${e.pages[1] !== e.pages[0] ? "–" + e.pages[1] : ""}</span><span>score ${Number(e.score).toFixed(3)}</span></div>
+      <div class="text">${esc(e.text)}</div>
+    </div>`).join("");
+
+  $("result").innerHTML = `
+    <h2>${esc(r.question)}</h2>
+    ${blank ? `<div class="blank">Not answerable from the corpus — abstained.</div>`
+            : `<div class="answer">${esc(r.answer_value)}${unit}</div>`}
+    <div class="meta">${source} · ${modeLabel} · top retrieval score ${Number(r.top_score).toFixed(3)}${expected}</div>
+    ${!blank && r.explanation && r.explanation !== "is_blank" ? `<p class="explain">${esc(r.explanation)}</p>` : ""}
+    ${refs ? `<p class="refs">Cited: ${refs}</p>` : ""}
+    <h2 style="margin-top:24px">Retrieved evidence</h2>
+    ${evidence || "<p class='meta'>No evidence retrieved.</p>"}`;
+  $("result").classList.remove("hidden");
+  $("result").scrollIntoView({behavior: "smooth", block: "start"});
+}
+
+$("ask").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  $("go").disabled = true; $("go").textContent = "…";
+  try {
+    const res = await fetch("/api/ask", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({ question: $("q").value, api_key: $("key").value, base_url: $("base").value, model: $("model").value }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || res.statusText);
+    render(data, "live");
+  } catch (e) {
+    $("result").innerHTML = `<p class="err">${esc(e.message)}</p>`;
+    $("result").classList.remove("hidden");
+  } finally {
+    $("go").disabled = false; $("go").textContent = "Ask";
+  }
+});
+
+fetch("/api/examples").then(r => r.json()).then(list => {
+  if (!list.length) return;
+  $("ex-wrap").classList.remove("hidden");
+  list.forEach(item => {
+    const b = document.createElement("button");
+    b.textContent = item.question;
+    b.onclick = () => render(item, "cached");
+    $("examples").appendChild(b);
+  });
+});
+</script>
+</body>
+</html>

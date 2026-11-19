@@ -1,0 +1,19 @@
+# secrets
+.env
+
+# local config (copy from config.example.json)
+config.json
+
+# competition data, papers, and generated artifacts
+data/
+docs/
+work/
+*.pdf
+*.csv
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/

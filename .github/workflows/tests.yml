@@ -1,0 +1,17 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # Tests cover parsing-independent logic, so the heavy model and PDF packages are skipped.
+      - run: pip install pandas numpy pypdf python-dotenv tqdm requests pytest
+      - run: pytest -q

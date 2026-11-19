@@ -1,0 +1,37 @@
+{
+  "paths": {
+    "competition_dir": "data",
+    "docs_dir": "docs",
+    "work_dir": "work"
+  },
+  "documents": {
+    "download_if_missing": true,
+    "request_timeout_seconds": 30,
+    "user_agent": "wattbot-rag/0.1"
+  },
+  "retrieval": {
+    "chunk_size": 800,
+    "chunk_overlap": 150,
+    "enable_dense": true,
+    "dense_model_name": "BAAI/bge-base-en-v1.5",
+    "enable_reranker": true,
+    "reranker_model_name": "BAAI/bge-reranker-base",
+    "bm25_top_k": 20,
+    "dense_top_k": 20,
+    "final_top_k": 12,
+    "rrf_k": 60,
+    "blank_relevance_threshold": 0.03
+  },
+  "generation": {
+    "backend": "openai_compatible",
+    "model": "gpt-4o-mini",
+    "base_url": null,
+    "api_key_env": "OPENAI_API_KEY",
+    "temperature": 0.0,
+    "max_tokens": 1024
+  },
+  "runtime": {
+    "seed": 42,
+    "log_level": "INFO"
+  }
+}

@@ -1,0 +1,2214 @@
+[
+  {
+    "mode": "llm",
+    "question": "What is the name of the benchmark suite presented in a recent paper for measuring inference energy consumption?",
+    "answer": "ML.ENERGY Benchmark",
+    "answer_value": "ML.ENERGY Benchmark",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "chung2025"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2505.06371"
+    ],
+    "explanation": "The answer is supported by the evidence which explicitly identifies the 'ML.ENERGY Benchmark' as the benchmark suite designed for measuring inference energy consumption in generative AI models.",
+    "supporting_materials": "We present the ML.ENERGY Benchmark, a benchmark suite and tool for measuring inference energy consumption under realistic service environments.",
+    "top_score": 0.7298567891120911,
+    "evidence": [
+      {
+        "doc_id": "chung2025",
+        "title": "The ML.ENERGY Benchmark: Toward Automated Inference Energy Measurement and Optimization",
+        "url": "https://arxiv.org/pdf/2505.06371",
+        "pages": [
+          28,
+          28
+        ],
+        "score": 0.7298567891120911,
+        "text": "From the power breakdown, we can observe that memory operations indeed draw significantly less power compared to computation, and thus computations with low compute-intensity should indeed draw less power. Furthermore, we can observe that the power draw and energy consumption of a specific hardware (GPU in this case) is not a function of just itself and the computations that it runs. Rather, software and hardware components that are integrated in the same system stack impacts how computations are executed on each other, affecting their power draw and energy consumption.\n\n## **D The ML.ENERG..."
+      },
+      {
+        "doc_id": "chung2025",
+        "title": "The ML.ENERGY Benchmark: Toward Automated Inference Energy Measurement and Optimization",
+        "url": "https://arxiv.org/pdf/2505.06371",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.7290248274803162,
+        "text": "As the adoption of Generative AI in real-world services grow explosively, _energy_ has emerged as a critical bottleneck resource. However, energy remains a metric that is often overlooked, under-explored, or poorly understood in the context of building ML systems. We present the ML.ENERGY Benchmark, a benchmark suite and tool for measuring inference energy consumption under realistic service environments, and the corresponding ML.ENERGY Leaderboard, which have served as a valuable resource for those hoping to understand and optimize the energy consumption of their generative AI services. In..."
+      },
+      {
+        "doc_id": "chung2025",
+        "title": "The ML.ENERGY Benchmark: Toward Automated Inference Energy Measurement and Optimization",
+        "url": "https://arxiv.org/pdf/2505.06371",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.7285358309745789,
+        "text": "As the adoption of Generative AI in real-world services grow explosively, _energy_ has emerged as a critical bottleneck resource. However, energy remains a metric that is often overlooked, under-explored, or poorly understood in the context of building ML systems. We present the ML.ENERGY Benchmark, a benchmark suite and tool for measuring inference energy consumption under realistic service environments, and the corresponding ML.ENERGY Leaderboard, which have served as a valuable resource for those hoping to understand and optimize the energy consumption of their generative AI services. In..."
+      },
+      {
+        "doc_id": "chung2025",
+        "title": "The ML.ENERGY Benchmark: Toward Automated Inference Energy Measurement and Optimization",
+        "url": "https://arxiv.org/pdf/2505.06371",
+        "pages": [
+          28,
+          28
+        ],
+        "score": 0.7280840873718262,
+        "text": "On July 2023, we launched the ML.ENERGY Leaderboard and Benchmark, the first inference energy leaderboard for modern generative AI models.<sup>6</sup> Our goal was to measure and understand the energy consumption of generative AI models, and we provided a web-based leaderboard to allow everyone to browse the results. The leaderboard started with only LLM chat with tens of different LLMs, but gradually expanded to include more tasks, models, and datasets. Our benchmarking suite to supply data to the leaderboard is what we dub the ML.ENERGY Benchmark. This paper shares our design philosophy a..."
+      },
+      {
+        "doc_id": "chung2025",
+        "title": "The ML.ENERGY Benchmark: Toward Automated Inference Energy Measurement and Optimization",
+        "url": "https://arxiv.org/pdf/2505.06371",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.7270709872245789,
+        "text": "**Jae-Won Chung Jeff J. Ma Ruofan Wu Jiachen Liu Oh Jun Kweon Yuxuan Xia Zhiyu Wu Mosharaf Chowdhury**\n\nUniversity of Michigan **The ML.ENERGY Initiative**\n\n## **Abstract**\n\nAs the adoption of Generative AI in real-world services grow explosively, _energy_ has emerged as a critical bottleneck resource. However, energy remains a metric that is often overlooked, under-explored, or poorly understood in the context of building ML systems. We present the ML.ENERGY Benchmark, a benchmark suite and tool for measuring inference energy consumption under realistic service environments, and the corres..."
+      }
+    ],
+    "expected_answer_value": "ML.ENERGY Benchmark"
+  },
+  {
+    "mode": "llm",
+    "question": "What were the net CO2e emissions from training the GShard-600B model?",
+    "answer": "4.3 tCO2e",
+    "answer_value": "4.3",
+    "answer_unit": "tCO2e",
+    "ref_id": [
+      "patterson2021"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2104.10350"
+    ],
+    "explanation": "The evidence directly states that the GShard-600B model produced 4.3 net tCO2e emissions during its training, which answers the question accurately.",
+    "supporting_materials": "GShard-600B’s emissions (Table 4) are 4.3 tCO2e.",
+    "top_score": 0.7310377359390259,
+    "evidence": [
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.7310377359390259,
+        "text": "232 MWh and emissions was 96 tCO 2 e. As Evolved Transformer saved 48 tCO 2 e alone for the single use case of developing Meena (see Table 4), the 3.2 net tCO 2 e cost for its development returned 15:1.\n\n- _GShard_ is composed of a set of lightweight annotation APIs that provide an elegant way to express a wide range of parallel computation patterns with minimal changes to the existing model code [Lep20]. It enabled scaling up of a multilingual neural machine translation Transformer model with sparsely gated mixture-of-experts (MoE) [Sha17] using automatic sharding. The GShard-600B model is..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.7310185432434082,
+        "text": "- _GShard_ is composed of a set of lightweight annotation APIs that provide an elegant way to express a wide range of parallel computation patterns with minimal changes to the existing model code [Lep20]. It enabled scaling up of a multilingual neural machine translation Transformer model with sparsely gated mixture-of-experts (MoE) [Sha17] using automatic sharding. The GShard-600B model is a particular use of that framework for training a multi-lingual translation model with 600B total parameters. Sparse models can have many model parameters while requiring much less computation than dense..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          15,
+          15
+        ],
+        "score": 0.7309635877609253,
+        "text": "GShard-600B’s emissions (Table 4) are 4.3 tCO 2 e —3.5 passenger SF-NY round trips—from consuming 24 MWh to train the model that could have 2B users; the amortized per-user CO 2 e impact of model training would be less than the CO 2 e impact of sending one text message<sup>26</sup> .\n\n## **5. Conclusion**"
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          15,
+          15
+        ],
+        "score": 0.7309455871582031,
+        "text": "GShard-600B’s emissions (Table 4) are 4.3 tCO 2 e —3.5 passenger SF-NY round trips—from consuming 24 MWh to train the model that could have 2B users; the amortized per-user CO 2 e impact of model training would be less than the CO 2 e impact of sending one text message<sup>26</sup> .\n\n## **5. Conclusion**\n\nGlobal climate change is a threat to economies, human health, and the environment, and the ML community needs to do its share to limit its carbon emissions.<sup>27</sup> We’re thankful that papers like [Lac19, Str19, Sch20, Hen20] helped make the ML community aware of this important issue..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          14,
+          15
+        ],
+        "score": 0.7309088110923767,
+        "text": "> 23 Despite targeting a narrow audience of scientists, COVID explorer served 1000 queries per day at launch. It drew interest from Pfizer, Bristol Myers Squibb, AstraZeneca, Regeneron, British Medical Journal, European Food Safety Authority, and the National Institute of Health. Pfizer’s Director of Global Medical Epidemiology used the tool daily; it led to Pfizer epidemiology research group to adapt the underlying ML models for systematic reviews and literature search. 24 Training COVID Explorer took 6 days on 64 TPU v3s running in Oklahoma. It used ~2.8 MWh and 0.13 net tCO 2 e.\n\n14\n\nalr..."
+      }
+    ],
+    "expected_answer_value": "4.3"
+  },
+  {
+    "mode": "llm",
+    "question": "What is the model size in gigabytes (GB) for the LLaMA-33B model?",
+    "answer": "64.7 GB",
+    "answer_value": "64.7",
+    "answer_unit": "GB",
+    "ref_id": [
+      "chen2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2405.01814"
+    ],
+    "explanation": "The answer is supported by the table in the evidence which explicitly lists the model size for LLaMA-33B as 64.7 GB.",
+    "supporting_materials": "|**Model**|**Parameters**|\n|---|---|\n|LLaMA-33B|64.7 GB|",
+    "top_score": 0.7185778617858887,
+    "evidence": [
+      {
+        "doc_id": "chen2024",
+        "title": "Efficient Heterogeneous Large Language Model Decoding with Model-Attention Disaggregation",
+        "url": "https://arxiv.org/pdf/2405.01814",
+        "pages": [
+          10,
+          11
+        ],
+        "score": 0.7185778617858887,
+        "text": "vLLM under various hardware configurations. Specifically, we adjust the DOPs for Lamina and the number of devices involving tensor parallelism for vLLM. As the results in Figure 11 shows, the throughput for Lamina rapidly increases with more attention workers added, which enables larger batch sizes. The addition of expensive model worker can only mildly improve the throughput by reducing the model-part execution latency. An exception is the LLaMA3-70B model, where the attainable batch size reaches 800 for DOP = (2 _,_ 4), which already saturates the computation resources on model workers; h..."
+      },
+      {
+        "doc_id": "chen2024",
+        "title": "Efficient Heterogeneous Large Language Model Decoding with Model-Attention Disaggregation",
+        "url": "https://arxiv.org/pdf/2405.01814",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.718254566192627,
+        "text": "|**Model**|**Parameters**|_L_|_d_|_G_|\n|---|---|---|---|---|\n|LLaMA-33B|64.7 GB|60|6656|1|\n|LLaMA-65B|130.1 GB|80|8192|1|\n|LLaMA3-70B|137.5 GB|80|8192|8|\n\ntraces, including the average prompt tokens ( _lp_ ) and average generated tokens ( _lg_ ), are listed in Table 4.\n\nTable 4: Request traces used for evaluation.\n\n|**Trace**|**# Requests**|_lp_|_lg_|\n|---|---|---|---|\n|Azure-Conv|19366|1154.7|211.1|\n|Azure-Code|8819|2047.8|27.9|\n|Kimi-Conv|12031|12035.1|342.6|\n|Kimi-TA|23608|8560.0|182.1|"
+      },
+      {
+        "doc_id": "chen2024",
+        "title": "Efficient Heterogeneous Large Language Model Decoding with Model-Attention Disaggregation",
+        "url": "https://arxiv.org/pdf/2405.01814",
+        "pages": [
+          11,
+          11
+        ],
+        "score": 0.7075393795967102,
+        "text": "<!-- Start of picture text -->\nTBT Model Attention Network<br>LLaMA-33B, DOP=(1,2), l=4096 LLaMA-65B, DOP=(2,4), l=4096 LLaMA3-70B, DOP=(2,2), l=4096<br>60 75<br>40<br>40 50<br>20<br>20 25<br>0 0 0<br>2 4 6 8 10 12 14 4 8 12 16 20 24 28 32 16 32 48 64 80 96 112 128<br>Batch size Batch size Batch size<br>LLaMA-33B, DOP=(1,2), l=8192 LLaMA-65B, DOP=(2,4), l=8192 LLaMA3-70B, DOP=(2,2), l=8192<br>60<br>40 60<br>40<br>40<br>20<br>20<br>20<br>0 0 0<br>1 2 3 4 5 6 7 2 4 6 8 10 12 14 16 8 16 24 32 40 48 56 64<br>Batch size Batch size Batch size<br>Latency (ms) Latency (ms) Latency (ms)<br>Latency (..."
+      },
+      {
+        "doc_id": "chen2024",
+        "title": "Efficient Heterogeneous Large Language Model Decoding with Model-Attention Disaggregation",
+        "url": "https://arxiv.org/pdf/2405.01814",
+        "pages": [
+          11,
+          11
+        ],
+        "score": 0.7066555619239807,
+        "text": "<!-- Start of picture text -->\nTBT Model Attention Network<br>LLaMA-33B, DOP=(1,2), l=4096 LLaMA-65B, DOP=(2,4), l=4096 LLaMA3-70B, DOP=(2,2), l=4096<br>60 75<br>40<br>40 50<br>20<br>20 25<br>0 0 0<br>2 4 6 8 10 12 14 4 8 12 16 20 24 28 32 16 32 48 64 80 96 112 128<br>Batch size Batch size Batch size<br>LLaMA-33B, DOP=(1,2), l=8192 LLaMA-65B, DOP=(2,4), l=8192 LLaMA3-70B, DOP=(2,2), l=8192<br>60<br>40 60<br>40<br>40<br>20<br>20<br>20<br>0 0 0<br>1 2 3 4 5 6 7 2 4 6 8 10 12 14 16 8 16 24 32 40 48 56 64<br>Batch size Batch size Batch size<br>Latency (ms) Latency (ms) Latency (ms)<br>Latency (..."
+      },
+      {
+        "doc_id": "chen2024",
+        "title": "Efficient Heterogeneous Large Language Model Decoding with Model-Attention Disaggregation",
+        "url": "https://arxiv.org/pdf/2405.01814",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.6868003010749817,
+        "text": "store the KV caches and compute the attention operators. As depicted in Figure 9, the attention operators can be parallelized among memory devices in various ways. One method is to distribute different requests across different devices; an alternative strategy is to partition and distribute the attention heads, which can also be computed independently, to different devices. The head-level partitioning approach ensures a balanced workload distribution, whereas the request-level partitioning may result in load imbalance due to the differences in sequence lengths and therefore the KV cache siz..."
+      }
+    ],
+    "expected_answer_value": "64.7"
+  },
+  {
+    "mode": "llm",
+    "question": "What was the total electricity consumption of all Google Cloud TPU pods worldwide in 2023, in megawatt-hours?",
+    "answer": "Unable to answer with confidence based on the provided documents.",
+    "answer_value": "is_blank",
+    "answer_unit": "MWh",
+    "ref_id": [],
+    "ref_url": [],
+    "explanation": "is_blank",
+    "supporting_materials": "is_blank",
+    "top_score": 0.6929059624671936,
+    "evidence": [
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          10,
+          10
+        ],
+        "score": 0.6929059624671936,
+        "text": "A recent study suggests that the global AI could consume 85 – 134 TWh of electricity in 2027 based on the GPU shipment [7], whereas a more aggressive estimate by the U.S. data center energy report projects that AI servers’ electricity consumption in the U.S. alone will surpass 150 – 300 TWh in 2028 [1]. Based on the former and more conservative projection, we estimate the potential water usage for global AI in 2027, while noting that our global estimates will be exceeded by the water usage attributed to AI in the U.S. alone in 2028 if the projection in [1] comes to fruition.\n\n**Scope-1 wate..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          13,
+          13
+        ],
+        "score": 0.5531184077262878,
+        "text": "Finally, Google publishes its total energy consumption, and for 2019 it was 12.2 TeraWatt-hours [Goo20]. Row 18 of Table 4 shows the percentage that each NLP model training was of that total. Even if we assume all four of Google’s large NLP models in Table 4 were trained in 2019, the total represents less than 0.005%. **The training of those four large NLP models is not a significant fraction of Google’s energy consumption.**\n\n> 19 Improvement in energy intensity is expressed as energy use per compute instance. [Has20] goes on to say the cloud’s increasing share of datacenters is causing a..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          13,
+          13
+        ],
+        "score": 0.5456554293632507,
+        "text": "In 2019 <u>the world saw 39M flights and US airlines flew 925M passengers , which helps explain why air</u> travel was responsible for 940 MtCO 2 , or ~2.5% of the world's annual CO 2 in 2018 of 33B tCO 2 e [Rit20].\n\nFinally, Google publishes its total energy consumption, and for 2019 it was 12.2 TeraWatt-hours [Goo20]. Row 18 of Table 4 shows the percentage that each NLP model training was of that total. Even if we assume all four of Google’s large NLP models in Table 4 were trained in 2019, the total represents less than 0.005%. **The training of those four large NLP models is not a signi..."
+      },
+      {
+        "doc_id": "amazon2023",
+        "title": "2023 Amazon Sustainability Report",
+        "url": "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf",
+        "pages": [
+          78,
+          78
+        ],
+        "score": 0.5391545295715332,
+        "text": "- Sustainability Ambassadors established a waste diversion program for our EU Logistics organization that reduced waste by 1.4 grams per dispatched shipment, for a total of 6 tons of waste avoided. The team’s waste avoidance projects helped us divert 88% of waste from landfills in 2023.\n\n- AWS Sustainability Ambassadors continued their implementation of the LED Everywhere Project, an initiative started in 2021 that aims to replace fluorescent or less energy-efficient lighting with LED alternatives in all AWS data centers. In 2023, 10,500 light bulbs were replaced with LEDs, resulting in an..."
+      },
+      {
+        "doc_id": "luccioni2025c",
+        "title": "Misinformation by Omission: The Need for More Environmental Transparency in AI",
+        "url": "https://arxiv.org/pdf/2506.15572",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.5364120602607727,
+        "text": "Another often cited and misrepresented metric is the estimate that a single request to ChatGPT uses approximately 3 watt-hours (Wh) of energy, which is \"ten times more than a Google search\". This figure is often quoted in the press<sup>36,37</sup> and in industry reports<sup>38</sup> . Tracing the origins of this metric leads to several assumptions: an initial remark from Alphabet’s Chairman John Hennessy during a 2023 interview with Reuters, in which he said that _“having an exchange with AI known as a large language model likely cost 10 times more than a standard keyword search”_<sup>39</..."
+      }
+    ],
+    "expected_answer_value": "is_blank"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: Hyperscale data centers in 2020 achieved more than 40% higher efficiency compared to traditional data centers.",
+    "answer": "True",
+    "answer_value": "1",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "wu2021b"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2108.06738"
+    ],
+    "explanation": "The evidence explicitly mentions that hyperscale data centers have more than 40% higher efficiency compared to traditional data centers, which confirms the statement in the question as true.",
+    "supporting_materials": "more than 40% higher efficiency for hyperscale data centers",
+    "top_score": 0.7305721044540405,
+    "evidence": [
+      {
+        "doc_id": "wu2021b",
+        "title": "SOCIO-TECHNOLOGICAL CHALLENGES AND OPPORTUNITIES: PATHS FORWARD",
+        "url": "https://arxiv.org/pdf/2108.06738",
+        "pages": [
+          2,
+          3
+        ],
+        "score": 0.7305721044540405,
+        "text": "vestment in large-scale data centers [Barroso and Hölzle, 2009]. The location of these data centers is dictated by a myriad of constraints – maximizing power and operational efficiency, proximity to population centers, weather conditions, local tax breaks – leading to some interesting tradeoffs in size, location, and ownership (on premise or cloud based) of the data centers. In 2019, urban data centers that optimize for service latency responsiveness are 26.7% smaller in size than the average data center operated by the major cloud providers [Greenstein and Fang, 2020]. Furthermore, between..."
+      },
+      {
+        "doc_id": "wu2021b",
+        "title": "SOCIO-TECHNOLOGICAL CHALLENGES AND OPPORTUNITIES: PATHS FORWARD",
+        "url": "https://arxiv.org/pdf/2108.06738",
+        "pages": [
+          2,
+          3
+        ],
+        "score": 0.7303998470306396,
+        "text": "vestment in large-scale data centers [Barroso and Hölzle, 2009]. The location of these data centers is dictated by a myriad of constraints – maximizing power and operational efficiency, proximity to population centers, weather conditions, local tax breaks – leading to some interesting tradeoffs in size, location, and ownership (on premise or cloud based) of the data centers. In 2019, urban data centers that optimize for service latency responsiveness are 26.7% smaller in size than the average data center operated by the major cloud providers [Greenstein and Fang, 2020]. Furthermore, between..."
+      },
+      {
+        "doc_id": "wu2021b",
+        "title": "SOCIO-TECHNOLOGICAL CHALLENGES AND OPPORTUNITIES: PATHS FORWARD",
+        "url": "https://arxiv.org/pdf/2108.06738",
+        "pages": [
+          2,
+          3
+        ],
+        "score": 0.7301244139671326,
+        "text": "vestment in large-scale data centers [Barroso and Hölzle, 2009]. The location of these data centers is dictated by a myriad of constraints – maximizing power and operational efficiency, proximity to population centers, weather conditions, local tax breaks – leading to some interesting tradeoffs in size, location, and ownership (on premise or cloud based) of the data centers. In 2019, urban data centers that optimize for service latency responsiveness are 26.7% smaller in size than the average data center operated by the major cloud providers [Greenstein and Fang, 2020]. Furthermore, between..."
+      },
+      {
+        "doc_id": "wu2021b",
+        "title": "SOCIO-TECHNOLOGICAL CHALLENGES AND OPPORTUNITIES: PATHS FORWARD",
+        "url": "https://arxiv.org/pdf/2108.06738",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.7291602492332458,
+        "text": "vestment in large-scale data centers [Barroso and Hölzle, 2009]. The location of these data centers is dictated by a myriad of constraints – maximizing power and operational efficiency, proximity to population centers, weather conditions, local tax breaks – leading to some interesting tradeoffs in size, location, and ownership (on premise or cloud based) of the data centers. In 2019, urban data centers that optimize for service latency responsiveness are 26.7% smaller in size than the average data center operated by the major cloud providers [Greenstein and Fang, 2020]. Furthermore, between..."
+      },
+      {
+        "doc_id": "luccioni2025a",
+        "title": "From Efficiency Gains to Rebound Effects: The Problem of Jevons' Paradox in AI's Polarized Environmental Debate",
+        "url": "https://arxiv.org/pdf/2501.16548",
+        "pages": [
+          5,
+          6
+        ],
+        "score": 0.6594681143760681,
+        "text": "These kinds of shifts in the way objects and processes operate can, in turn, come with **space rebound effects** that change the way physical space is used with the introduction of a new product. For instance, new approaches such as e-commerce have manifested changes in the physical space occupied by brick-and-mortar stores and warehouses, resulting in smaller stores and bigger warehouses [127]. This, in turn, has impacts on supply chain dynamics, redistributing the environmental footprint of operations (e.g. heating and cooling), logistics and transportation [41]. Similarly, the proliferat..."
+      }
+    ],
+    "expected_answer_value": "1"
+  },
+  {
+    "mode": "llm",
+    "question": "For every medium-length GPT-3 completion (prompt= 800 words; response 150 - 300 words), roughly how many 500 mL bottles of water does the model 'drink'?",
+    "answer": "30",
+    "answer_value": "30",
+    "answer_unit": "500 mL bottles",
+    "ref_id": [
+      "li2025b"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2304.03271"
+    ],
+    "explanation": "The evidence states that GPT-3 consumes a 500 mL bottle of water for approximately 10 to 50 medium-length responses. By calculating the average of this range, we determine that GPT-3 drinks about 30 bottles for a medium-length completion.",
+    "supporting_materials": "GPT-3 needs to 'drink' (i.e., consume) a 500ml bottle of water for roughly 10 – 50 medium-length responses.",
+    "top_score": 0.7283381819725037,
+    "evidence": [
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.7283381819725037,
+        "text": "To ensure that the growth in AI does not exacerbate the global water stresses or outweigh the environmental benefits it provides, it is a critical time to uncover and address AI’s hidden water footprint amid the increasingly severe freshwater scarcity crisis, worsened extended droughts, and quickly aging public water infrastructure. The urgency can also be reflected in part by the recent commitment to “Water Positive by 2030” from industry leaders, including Google [4] and Microsoft [6], and by the inclusion of water footprint as a key metric into the world’s first international standard on..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.7271684408187866,
+        "text": "In this paper, we advocate for a holistic approach to sustainable AI that extends beyond the carbon footprint to also address the water footprint. Specifically, we present a principled methodology to estimate AI’s total water footprint, including both operational water and embodied water. By taking the GPT-3 model with 175 billion parameters as an example [11], we show that training GPT-3 in Microsoft’s U.S. data centers can consume a total of 5.4 million liters of water, including **700,000 liters** of scope-1 on-site water consumption. Additionally, GPT-3 needs to “drink” (i.e., consume)..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.6902497410774231,
+        "text": "GPT-3 was trained and deployed by OpenAI in Microsoft’s data centers, with an estimated training energy of 1287 MWh [29]. In line with the practice of estimating the carbon footprint, we use the most recent annualized average on-site PUE and WUE for each location, as reported by Microsoft [27, 28]. For power plant water efficiency, different references may provide different estimates of EWIF. Thus, for consistency across regions, we use the EWIF provided by [8] to estimate scope-2 water consumption, as it employs the same methodology for calculating EWIF. Moreover, a large number of Microso..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          5,
+          6
+        ],
+        "score": 0.529780387878418,
+        "text": "As a representative usage scenario for an LLM, we consider a conversation task, which typically includes a CPU-intensive prompt phase that processes the user’s input (a.k.a., prompt) and a memory-intensive token phase that produces outputs [30]. More specifically, we consider a medium-sized request, each with approximately _≤_ 800 words of input and 150 – 300 words of output [30]. The official estimate indicates that GPT-3 consumes an order of 0.4 kWh of electricity to generate 100 pages of content, equivalent to roughly 0.004 kWh per page [11]. While no details are provided, the estimate l..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.5130927562713623,
+        "text": "As a representative usage scenario for an LLM, we consider a conversation task, which typically includes a CPU-intensive prompt phase that processes the user’s input (a.k.a., prompt) and a memory-intensive token phase that produces outputs [30]. More specifically, we consider a medium-sized request, each with approximately _≤_ 800 words of input and 150 – 300 words of output [30]. The official estimate indicates that GPT-3 consumes an order of 0.4 kWh of electricity to generate 100 pages of content, equivalent to roughly 0.004 kWh per page [11]. While no details are provided, the estimate l..."
+      }
+    ],
+    "expected_answer_value": "[0.02,0.1]"
+  },
+  {
+    "mode": "llm",
+    "question": "From a sample of 60 papers from top AI conferences, what is the difference between the percentage of CVPR papers that target accuracy and the percentage of CVPR papers that target efficiency?",
+    "answer": "55%",
+    "answer_value": "55",
+    "answer_unit": "percent",
+    "ref_id": [
+      "schwartz2019"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/1907.10597"
+    ],
+    "explanation": "The evidence clearly states the percentages of CVPR papers targeting accuracy and efficiency, allowing us to calculate the difference directly.",
+    "supporting_materials": "75% of CVPR papers target accuracy and 20% target efficiency.",
+    "top_score": 0.7309643626213074,
+    "evidence": [
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7309643626213074,
+        "text": "To demonstrate the prevalence of Red AI, we sampled 60 papers from top AI conferences (ACL,<sup>3</sup> NeurIPS,<sup>4</sup> and CVPR<sup>5</sup> ). For each paper we noted whether the authors claim their main contribution to be (a) an improvement to accuracy or some related measure, (b) an improvement to efficiency, (c) both, or (d) other. As shown in Figure 2, in all conferences we considered, a large majority of the papers target accuracy (90% of ACL papers, 80% of NeurIPS papers and 75% of CVPR papers). Moreover, for both empirical AI conferences (ACL and CVPR) only a small portion (10%..."
+      },
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7309445738792419,
+        "text": "by pushing the boundaries of AI. Our exposition here is meant to highlight areas where computational expense is high, and to present each as an opportunity for developing more efficient techniques.\n\nTo demonstrate the prevalence of Red AI, we sampled 60 papers from top AI conferences (ACL,<sup>3</sup> NeurIPS,<sup>4</sup> and CVPR<sup>5</sup> ). For each paper we noted whether the authors claim their main contribution to be (a) an improvement to accuracy or some related measure, (b) an improvement to efficiency, (c) both, or (d) other. As shown in Figure 2, in all conferences we considered,..."
+      },
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          2,
+          3
+        ],
+        "score": 0.7286367416381836,
+        "text": "This section analyzes the factors contributing to Red AI and shows how it is resulting in diminishing returns over time (see Figure 3). We note again that Red AI work is valuable, and in fact, much of it contributes to what we know\n\n2\n\nFigure 2: AI papers tend to target _accuracy_ rather than _efficiency_ . The figure shows the proportion of papers that target accuracy, efficiency, both or other from a sample of 60 papers from top AI conferences.\n\nby pushing the boundaries of AI. Our exposition here is meant to highlight areas where computational expense is high, and to present each as an o..."
+      },
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          3,
+          4
+        ],
+        "score": 0.7190834283828735,
+        "text": "Equation 1 is a simplification (e.g., different hyperparameter assignments can lead to different costs for processing a single example). It also ignores other factors such as the number of training epochs. Nonetheless, it illustrates three\n\n> 3https://acl2018.org\n\n> 4https://nips.cc/Conferences/2018\n\n> 5http://cvpr2019.thecvf.com\n\n> 6Interestingly, many NeurIPS papers included convergence rates or regret bounds which describe performance as a function of examples or iterations, thus targeting efficiency (55%). This indicates an increased awareness of the importance of this concept, at least..."
+      },
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          10,
+          10
+        ],
+        "score": 0.5287619829177856,
+        "text": "- [16] Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, and Hartwig Adam. MobileNets: Efficient convolutional neural networks for mobile vision applications, 2017. arXiv:1704.04861.\n\n- [17] Jie Hu, Li Shen, and Gang Sun. Squeeze-and-excitation networks. In _Proc. of CVPR_ , 2018.\n\n- [18] Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara, Alireza Fathi, Ian Fischer, Zbigniew Wojna, Yang Song, Sergio Guadarrama, and Kevin Murphy. Speed/accuracy trade-offs for modern convolutional object detectors. In _Proc. of CVP..."
+      }
+    ],
+    "expected_answer_value": "55"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: The AI Act makes energy consumption data from providers publicly available to NGOs, analysts, and the general public.",
+    "answer": "False",
+    "answer_value": "0",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "ebert2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2410.06681"
+    ],
+    "explanation": "The evidence clearly states that energy consumption data mandated by the AI Act is not accessible to the general public, which directly contradicts the claim in the question.",
+    "supporting_materials": "This information is restricted to authorities and is not accessible to downstream providers or the general public, due to confidentiality clauses in Articles 21(3), 53(7), and 78(1).",
+    "top_score": 0.6933138966560364,
+    "evidence": [
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.6933138966560364,
+        "text": "## **7.3 Transparency and Accountability Mechanisms**\n\nTo promote public trust and accountability in AI’s environmental impact, the following measures are recommended:\n\n- **Public Access to Climate-Related Disclosures** : All climaterelated disclosures, including energy consumption, should be made accessible to the general public [4]. If only aggregate data are shared, trade secrets can be protected while allowing for public scrutiny by analysts, academics, and NGOs. Public transparency would drive market pressure, reputational incentives, and public accountability; it would, arguably, enco..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.6914499402046204,
+        "text": "- **Public Access to Climate-Related Disclosures** : All climaterelated disclosures, including energy consumption, should be made accessible to the general public [4]. If only aggregate data are shared, trade secrets can be protected while allowing for public scrutiny by analysts, academics, and NGOs. Public transparency would drive market pressure, reputational incentives, and public accountability; it would, arguably, encourage companies to reduce their environmental impact.\n\n- **Energy Reporting for High-Risk AI (HRAI)** : For HighRisk AI (HRAI) systems, the Act should require the disclo..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.6767375469207764,
+        "text": "systems to be considered OS. However, it does not mandate the disclosure of energy consumption. This results in an unwarrented lack of visibility concerning the environmental impact and energy usage of these models.\n\n4) Where the Act does mandate the disclosure of energy consumption, this information is restricted to authorities and is not accessible to downstream providers (unless the proposed interpretation from 2) is applied) or the general public, due to confidentiality clauses in Articles 21(3), 53(7), and 78(1) [4]. The limited availability of this data significantly reduces transpare..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          8,
+          8
+        ],
+        "score": 0.6170071959495544,
+        "text": "energy consumption data to their clients. Complementing Art. 25(2) AI Act, the obligation established in Sec. 15 of the German Energy Efficiency Act, requiring data centers to inform customers on their attributable annual energy consumption, could serve as a blueprint. Notably, such a law could also apply to cloud service providers based outside the EU, with the caveat, however, that such an extraterritorial application oftentimes lacks enforcement capabilities.\n\n## **6.4 Sustainability Impact Assessments**\n\nThe operationalization of sustainability impact assessments (SIAs) within the risk..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          14,
+          14
+        ],
+        "score": 0.6116542220115662,
+        "text": "Kai Ebert, Nicolas Alder, Ralf Herbrich, and Philipp Hacker\n\n## **B Policy Proposals Overview**\n\n**Table 1: Summary of Policy Proposals for AI and Environmental Impact**\n\n|**Area**|**Policy Proposal and Description**|\n|---|---|\n|**Energy and Environmental**<br>**Reporting**|**Energy consumption from inferences**: Include energy consumption from<br>both single and cumulative inferences in reporting.<br>**Indirect emissions and water consumption**: Mandate reporting of indirect<br>emissions and water use in AI applications.<br>**Cumulative server energy reporting**: Require energy consumption..."
+      }
+    ],
+    "expected_answer_value": "0"
+  },
+  {
+    "mode": "llm",
+    "question": "What is the projected maximum batch size (in samples) for fine-tuning a Mixtral model with a projected GPU capacity of 100?",
+    "answer": "28 samples",
+    "answer_value": "28",
+    "answer_unit": "samples",
+    "ref_id": [
+      "xia2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2408.04693"
+    ],
+    "explanation": "The evidence directly provides the maximum batch size for a 100GB GPU capacity, confirming that the projected maximum batch size for fine-tuning a Mixtral model is 28 samples.",
+    "supporting_materials": "For GPU memory capacities of 100GB and 120GB, our model predicts that the maximum batch sizes supported for fine-tuning Mixtral will be 28 and 35, respectively.",
+    "top_score": 0.7306743860244751,
+    "evidence": [
+      {
+        "doc_id": "xia2024",
+        "title": "Understanding the Performance and Estimating the Cost of LLM Fine-Tuning",
+        "url": "https://arxiv.org/pdf/2408.04693",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.7306743860244751,
+        "text": "The _MoE coefficient_ and _scaling coefficient_ vary across models. These coefficients are independent of GPU microarchitectural parameters. We find the maximum batch size for both LLM models on NVIDIA A40 (48GB), A100 (40GB), A100 (80GB), and H100 (80GB), and apply our model to find the optimal coefficients. For Mixtral, _C_ 0 = 82 and _C_ 1 = 0 _._ 95, and for BlackMamba, _C_ 0 = 83 and _C_ 1 = 0 _._ 88. While we showcase these parameters for the models evaluated, §V-D discusses how to generalize this approach for other models.\n\nUsing our analytical model, we demonstrate the maximum batch..."
+      },
+      {
+        "doc_id": "xia2024",
+        "title": "Understanding the Performance and Estimating the Cost of LLM Fine-Tuning",
+        "url": "https://arxiv.org/pdf/2408.04693",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.7305864691734314,
+        "text": "<!-- Start of picture text -->\nGround Truth Projection<br>40<br>bsz=35<br>35<br>30 A100-80GB bsz=28<br>H100<br>25<br>20<br>15 A40<br>10 A100-40GB<br>5<br>Projected GPU capacity<br>0<br>0 20 40 60 80 100 120<br>GPU DRAM capacity<br>Max batch size<br><!-- End of picture text -->\n\nFig. 13. Projected maximum batch size of Mixtral for different GPUs.\n\namount of GPU memory, and need to be subtracted in the analytical model. Fig. 8 supports this by showing that on the same dataset, BlackMamba can support larger batch size than Mixtral because of its smaller model size."
+      },
+      {
+        "doc_id": "xia2024",
+        "title": "Understanding the Performance and Estimating the Cost of LLM Fine-Tuning",
+        "url": "https://arxiv.org/pdf/2408.04693",
+        "pages": [
+          8,
+          9
+        ],
+        "score": 0.7305787801742554,
+        "text": "<!-- Start of picture text -->\nGPU mem − model mem<br>Max BSZ = ⌊C 0 ∗<br>seq len ∗ ((1 − C 1) + C 1 ∗ sparsity ) ⌋<br>(1)<br><!-- End of picture text -->\n\nIntuitively, larger GPU memory allows for higher batch sizes. In the meantime, the LLM model will take up a certain\n\n<!-- Start of picture text -->\nGround Truth Projection<br>40<br>bsz=35<br>35<br>30 A100-80GB bsz=28<br>H100<br>25<br>20<br>15 A40<br>10 A100-40GB<br>5<br>Projected GPU capacity<br>0<br>0 20 40 60 80 100 120<br>GPU DRAM capacity<br>Max batch size<br><!-- End of picture text -->\n\nFig. 13. Projected maximum batch size of Mixt..."
+      },
+      {
+        "doc_id": "xia2024",
+        "title": "Understanding the Performance and Estimating the Cost of LLM Fine-Tuning",
+        "url": "https://arxiv.org/pdf/2408.04693",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.7305408120155334,
+        "text": "Using our analytical model, we demonstrate the maximum batch sizes for fine-tuning on four different NVIDIA GPUs: A40, A100-40GB, A100-80GB and H100 with memory capacities of 48GB, 40GB, 80GB, and 80GB, respectively. Fig. 13 shows our projected maximum batch size and correlate it with experimented ground truth. While the maximum memory capacity available in NVIDIA GPUs today is 80GB, we use our analytical model to project the maximum batch size that future GPUs might support. For GPU memory capacities of 100GB and 120GB, our model predicts that the maximum batch sizes supported for fine-tun..."
+      },
+      {
+        "doc_id": "xia2024",
+        "title": "Understanding the Performance and Estimating the Cost of LLM Fine-Tuning",
+        "url": "https://arxiv.org/pdf/2408.04693",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.7304724454879761,
+        "text": "Using our analytical model, we demonstrate the maximum batch sizes for fine-tuning on four different NVIDIA GPUs: A40, A100-40GB, A100-80GB and H100 with memory capacities of 48GB, 40GB, 80GB, and 80GB, respectively. Fig. 13 shows our projected maximum batch size and correlate it with experimented ground truth. While the maximum memory capacity available in NVIDIA GPUs today is 80GB, we use our analytical model to project the maximum batch size that future GPUs might support. For GPU memory capacities of 100GB and 120GB, our model predicts that the maximum batch sizes supported for fine-tun..."
+      }
+    ],
+    "expected_answer_value": "28"
+  },
+  {
+    "mode": "llm",
+    "question": "What was the approximate speedup in inference throughput for LLaMA-7B when using NVIDIA A100 GPUs compared to V100 GPUs?",
+    "answer": "2 times speedup in inference throughput for LLaMA-7B using A100 compared to V100.",
+    "answer_value": "2",
+    "answer_unit": "multiplier",
+    "ref_id": [
+      "samsi2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2310.03003"
+    ],
+    "explanation": "The evidence directly states that the LLaMA 7B model exhibits a 2 times increase in inference throughput when comparing A100 GPUs to V100 GPUs, which answers the question regarding the approximate speedup.",
+    "supporting_materials": "we see anywhere from a 2 times (7B) to a 1.25 times increase (13B) in inference latency on the A100 when compared to the V100",
+    "top_score": 0.7252089381217957,
+    "evidence": [
+      {
+        "doc_id": "samsi2024",
+        "title": "From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference",
+        "url": "https://arxiv.org/pdf/2310.03003",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.7252089381217957,
+        "text": "13B on two GPUs in each case whereas the 65B model was run on 8 V100 GPUs and 4 A100 GPUs respectively due to the size of the model and available memory on the GPU(s).\n\nAs expected, we observe that the A100 outperforms V100 on both the Alpaca and GSM8K datasets: particularly for the smaller LLaMA 7B and 13B, we see anywhere from a 2 times (7B) to a 1.25 times increase (13B) in inference latency on the A100 when compared to the V100 across words per second, tokens per second, and responses per second. Faster response rates and inference are likely due to the fact that the number of computati..."
+      },
+      {
+        "doc_id": "samsi2024",
+        "title": "From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference",
+        "url": "https://arxiv.org/pdf/2310.03003",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.7239686250686646,
+        "text": "With these limits in mind, we present the inference performance of LLaMA 7B, 13B, and 65B on the Alpaca and GSM8K datasets with the bare minimum hardware settings in Figure 2. The plots in Figure 2 show a baseline comparison of inference performance of the three LLaMA variants on both the V100 and A100 GPUs respectively. For each model, in line with the spirit of the bare minimum settings, inference is done with a batch size of 64 and an maximum generation length of 256. The 7B model was run on a single GPU and\n\nTABLE II: **Baseline configurations for LLaMA 7B, 13B, and 65B:** This table li..."
+      },
+      {
+        "doc_id": "samsi2024",
+        "title": "From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference",
+        "url": "https://arxiv.org/pdf/2310.03003",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.723872721195221,
+        "text": "As expected, we observe that the A100 outperforms V100 on both the Alpaca and GSM8K datasets: particularly for the smaller LLaMA 7B and 13B, we see anywhere from a 2 times (7B) to a 1.25 times increase (13B) in inference latency on the A100 when compared to the V100 across words per second, tokens per second, and responses per second. Faster response rates and inference are likely due to the fact that the number of computations, directly related to the number of parameters of said model, involved in the 7B and 13B models are significantly lower than the 65B model. We do note that for LLaMA..."
+      },
+      {
+        "doc_id": "samsi2024",
+        "title": "From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference",
+        "url": "https://arxiv.org/pdf/2310.03003",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.7033588290214539,
+        "text": "Given the sizes of the models, the size of the data, and the hardware memory limits, we only show results from experiments that were possible for a given combination of parameters (i.e., for some models, certain combinations of batch size and number of shards are infeasible due to memory limits of the underlying GPUs). Table II shows the bare minimum hardware requirements for each LLaMA variant and the maximum batch size possible for each combination, assuming no further model compression, optimization, quantization, distillation etc.\n\nWith these limits in mind, we present the inference per..."
+      },
+      {
+        "doc_id": "samsi2024",
+        "title": "From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference",
+        "url": "https://arxiv.org/pdf/2310.03003",
+        "pages": [
+          3,
+          4
+        ],
+        "score": 0.6989107728004456,
+        "text": "Inference performance is measured in terms of rates: words, tokens, and responses per second or, equivalently, the number of words, tokens, and responses generated per second. When running inference with LLaMA, the model generates a string of text for each input until the length of the text hits a maximum generation length or a stop-word is encountered. The number of words are calculated by counting the number of words present in the output by splitting each output string on spaces. The number of tokens is calculated using LLaMA’s own default tokenizer by counting the number of tokens in th..."
+      }
+    ],
+    "expected_answer_value": "2"
+  },
+  {
+    "mode": "llm",
+    "question": "What is the estimated total operational water consumption for training GPT-3 in Microsoft's U.S. data centers, in million liters?",
+    "answer": "The estimated total operational water consumption for training GPT-3 in Microsoft's U.S. data centers is 5.4 million liters.",
+    "answer_value": "5.4",
+    "answer_unit": "million liters",
+    "ref_id": [
+      "li2025b"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2304.03271"
+    ],
+    "explanation": "The evidence directly provides the total operational water consumption for training GPT-3 as 5.4 million liters, which is the exact figure requested in the question.",
+    "supporting_materials": "By taking the GPT-3 model with 175 billion parameters as an example, we show that training GPT-3 in Microsoft’s U.S. data centers can consume a total of 5.4 million liters of water.",
+    "top_score": 0.7310238480567932,
+    "evidence": [
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.7310238480567932,
+        "text": "In this paper, we advocate for a holistic approach to sustainable AI that extends beyond the carbon footprint to also address the water footprint. Specifically, we present a principled methodology to estimate AI’s total water footprint, including both operational water and embodied water. By taking the GPT-3 model with 175 billion parameters as an example [11], we show that training GPT-3 in Microsoft’s U.S. data centers can consume a total of 5.4 million liters of water, including **700,000 liters** of scope-1 on-site water consumption. Additionally, GPT-3 needs to “drink” (i.e., consume)..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.730985701084137,
+        "text": "To ensure that the growth in AI does not exacerbate the global water stresses or outweigh the environmental benefits it provides, it is a critical time to uncover and address AI’s hidden water footprint amid the increasingly severe freshwater scarcity crisis, worsened extended droughts, and quickly aging public water infrastructure. The urgency can also be reflected in part by the recent commitment to “Water Positive by 2030” from industry leaders, including Google [4] and Microsoft [6], and by the inclusion of water footprint as a key metric into the world’s first international standard on..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.7309451103210449,
+        "text": "The core of ChatGPT, a popular online service, is a large language model (LLM) based on subsequent versions of GPT-3. We present a case study to estimate the operational water consumption for the full GPT-3 model with 175 billion parameters [11]. We exclude embodied water footprint due to the lack of public data for scope-3 water usage. We choose GPT-3 as Microsoft publishes its location-wise WUE and PUE [27,28]. The results are summarized in Table 1.\n\n#### **3.3.1 Training**\n\nGPT-3 was trained and deployed by OpenAI in Microsoft’s data centers, with an estimated training energy of 1287 MWh..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.730943500995636,
+        "text": "GPT-3 was trained and deployed by OpenAI in Microsoft’s data centers, with an estimated training energy of 1287 MWh [29]. In line with the practice of estimating the carbon footprint, we use the most recent annualized average on-site PUE and WUE for each location, as reported by Microsoft [27, 28]. For power plant water efficiency, different references may provide different estimates of EWIF. Thus, for consistency across regions, we use the EWIF provided by [8] to estimate scope-2 water consumption, as it employs the same methodology for calculating EWIF. Moreover, a large number of Microso..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.7308363318443298,
+        "text": "GPT-3 was trained and deployed by OpenAI in Microsoft’s data centers, with an estimated training energy of 1287 MWh [29]. In line with the practice of estimating the carbon footprint, we use the most recent annualized average on-site PUE and WUE for each location, as reported by Microsoft [27, 28]. For power plant water efficiency, different references may provide different estimates of EWIF. Thus, for consistency across regions, we use the EWIF provided by [8] to estimate scope-2 water consumption, as it employs the same methodology for calculating EWIF. Moreover, a large number of Microso..."
+      }
+    ],
+    "expected_answer_value": "5439000"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: The authors propose that sustainability impact assessments (SIAs) should apply not just to high-risk AI but across all AI systems.",
+    "answer": "True",
+    "answer_value": "1",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "ebert2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2410.06681"
+    ],
+    "explanation": "The evidence explicitly states that SIAs should apply to all AI systems, not just high-risk ones, which directly supports the statement in the question as true.",
+    "supporting_materials": "Importantly, these assessments should not be limited to high-risk AI models but should also apply to all AI systems, regardless of the associated risk to health or safety.",
+    "top_score": 0.7308841347694397,
+    "evidence": [
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          8,
+          8
+        ],
+        "score": 0.7308841347694397,
+        "text": "energy consumption data to their clients. Complementing Art. 25(2) AI Act, the obligation established in Sec. 15 of the German Energy Efficiency Act, requiring data centers to inform customers on their attributable annual energy consumption, could serve as a blueprint. Notably, such a law could also apply to cloud service providers based outside the EU, with the caveat, however, that such an extraterritorial application oftentimes lacks enforcement capabilities.\n\n## **6.4 Sustainability Impact Assessments**\n\nThe operationalization of sustainability impact assessments (SIAs) within the risk..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          8,
+          8
+        ],
+        "score": 0.7308474183082581,
+        "text": "The operationalization of sustainability impact assessments (SIAs) within the risk assessments required under the AI Act involves integrating environmental considerations into the existing risk management frameworks that high-risk AI model providers and GPAI providers must follow. Much like data protection or algorithmic impact assessments, SIAs would serve as a practical tool for embedding climate considerations into the development and deployment of AI systems. Importantly, these assessments should not be limited to high-risk AI models but should also apply to all AI systems, regardless o..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          14,
+          14
+        ],
+        "score": 0.6241874694824219,
+        "text": "Kai Ebert, Nicolas Alder, Ralf Herbrich, and Philipp Hacker\n\n## **B Policy Proposals Overview**\n\n**Table 1: Summary of Policy Proposals for AI and Environmental Impact**\n\n|**Area**|**Policy Proposal and Description**|\n|---|---|\n|**Energy and Environmental**<br>**Reporting**|**Energy consumption from inferences**: Include energy consumption from<br>both single and cumulative inferences in reporting.<br>**Indirect emissions and water consumption**: Mandate reporting of indirect<br>emissions and water use in AI applications.<br>**Cumulative server energy reporting**: Require energy consumption..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.6064623594284058,
+        "text": "Key actors in the AI value chain include providers and deployers. Providers develop or market AI models or systems (Art. 3(3)) while deployers use existing AI systems in a professional capacity (Art. 3(4)). Note that other operationally relevant actors, such as cloud service providers, data providers, data center operators, or other intermediaries, are not directly subject to AI Act rules.\n\nThe Act pays specific attention to general-purpose AI (GPAI) models, e.g., large language models (LLMs) like GPT-4, that are defined by the wide range of possible uses. Those with the most advanced capab..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.6029382944107056,
+        "text": "Overall, while the AI Act introduces valuable steps toward addressing climate-related concerns in AI development and deployment, it falls short of establishing a comprehensive framework for mitigating the environmental risks posed by AI systems. Key provisions on transparency and risk management for high-risk AI and general-purpose AI systems make some progress in requiring documentation of computational resources and energy consumption, but significant gaps remain. For example, the Act does not mandate the disclosure of energy consumption during the inference phase, a crucial omission give..."
+      }
+    ],
+    "expected_answer_value": "1"
+  },
+  {
+    "mode": "llm",
+    "question": "As of 2023, what was the water use effectiveness (WUE) for AWS data centers, in L/kWh?",
+    "answer": "0.18 liters of water per kilowatt-hour (L/kWh) for AWS data centers in 2023.",
+    "answer_value": "0.18",
+    "answer_unit": "L/kWh",
+    "ref_id": [
+      "amazon2023"
+    ],
+    "ref_url": [
+      "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf"
+    ],
+    "explanation": "The answer is supported by the evidence which explicitly states the WUE for AWS data centers in 2023 as 0.18 L/kWh, indicating a reduction from 0.19 L/kWh in 2022, thus demonstrating AWS's commitment to improving water efficiency.",
+    "supporting_materials": "0.18 liters of water per kilowatt-hour (L/kWh) water use effectiveness (WUE) for AWS data centers, a 5% improvement from 2022.",
+    "top_score": 0.7310141324996948,
+    "evidence": [
+      {
+        "doc_id": "amazon2023",
+        "title": "2023 Amazon Sustainability Report",
+        "url": "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf",
+        "pages": [
+          40,
+          41
+        ],
+        "score": 0.7310141324996948,
+        "text": "Liters of water per kilowatt-hour (L/kWh) water use effectiveness (WUE) for AWS data centers, a 5% improvement from 2022 and a 28% improvement from 2021, demonstrating AWS’s leadership in water use effectiveness among cloud providers\n\n###### 3.5B\n\nLiters of water returned to communities from replenishment projects in 2023, with additional volume contracted and replenishment expected to grow annually to reach the 2030 water positive goal\n\n###### 90%\n\nOf our North American fulfillment centers, sort centers, and grocery logistics sites had faucet aerators—screens that screw into faucets, addin..."
+      },
+      {
+        "doc_id": "amazon2023",
+        "title": "2023 Amazon Sustainability Report",
+        "url": "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf",
+        "pages": [
+          42,
+          42
+        ],
+        "score": 0.7309641242027283,
+        "text": "improve AWS’s industry-leading global data center WUE to 0.18 liters of water per kilowatt-hour (L/kWh) in 2023 from 0.19 L/kWh in 2022—a 5% improvement year over year and a 28% improvement since 2021.\n\n###### Delivering Water Replenishment\n\nBy the end of 2023, AWS had invested in 15 water replenishment activities, returning water to the communities where it operates across 12 of our global infrastructure regions.<sup>25</sup> These investments have expanded AWS replenishment activities to three new countries, bringing the total to 10: Australia, Brazil, India, Indonesia, Ireland, South Afr..."
+      },
+      {
+        "doc_id": "amazon2023",
+        "title": "2023 Amazon Sustainability Report",
+        "url": "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf",
+        "pages": [
+          40,
+          40
+        ],
+        "score": 0.7308645844459534,
+        "text": "In Northern Virginia, AWS collaborates with Stroud Water Research Center on stream-friendly projects that increase groundwater recharge and deliver better-protected water resources to more people in the Chesapeake Bay area.\n\n###### 700K\n\nCubic meters of water loss avoided through a twoyear monitoring pilot at 53 sites in the UK in 2022 and 2023. In 2024, we are expanding this project into the EU\n\n###### 0.18\n\nLiters of water per kilowatt-hour (L/kWh) water use effectiveness (WUE) for AWS data centers, a 5% improvement from 2022 and a 28% improvement from 2021, demonstrating AWS’s leadership..."
+      },
+      {
+        "doc_id": "amazon2023",
+        "title": "2023 Amazon Sustainability Report",
+        "url": "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf",
+        "pages": [
+          42,
+          42
+        ],
+        "score": 0.7308247685432434,
+        "text": "```\n2023 Amazon Sustainability Report\n```\n\n```\nOverview\n```\n\n```\n42\n```\n\n```\nCarbon-Free Energy\n```\n\n```\nPackagingWaste and Circularity\n```\n\n```\nCarbon\n```\n\n```\nWater\n```\n\nand fix leaks, and gain other efficiencies. AWS finds ways to return used non-contact cooling water to the community, including conveying the water to third parties to use in growing crops such as alfalfa, soybeans, and wheat.\n\nimprove AWS’s industry-leading global data center WUE to 0.18 liters of water per kilowatt-hour (L/kWh) in 2023 from 0.19 L/kWh in 2022—a 5% improvement year over year and a 28% improvement since 2..."
+      },
+      {
+        "doc_id": "amazon2023",
+        "title": "2023 Amazon Sustainability Report",
+        "url": "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf",
+        "pages": [
+          41,
+          41
+        ],
+        "score": 0.7307705283164978,
+        "text": "- **AWS data centers:** Water is an essential resource for AWS. AWS primarily uses it to cool its global data centers, which give customers continuous access to AWS technologies. As a leader in water use effectiveness (WUE) among cloud providers, AWS aims to do its part to help solve water scarcity challenges. That is why it has set a goal to become water positive by 2030, meaning it will return more water to communities and the environment than its direct operations use. Through this goal, AWS is focused on reducing overall water withdrawal and replenishing water in basins facing water sca..."
+      }
+    ],
+    "expected_answer_value": "0.18"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: Local inference was emphasized as a sustainability measure because it reduces both network overhead and carbon footprint when deploying large language models.",
+    "answer": "True",
+    "answer_value": "1",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "khan2025"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2504.06307"
+    ],
+    "explanation": "The evidence explicitly mentions that local inference minimizes data transmission and significantly reduces both network overhead and carbon footprint, which confirms that the statement in the question is true.",
+    "supporting_materials": "By minimizing data transmission between clients and remote servers, this method significantly reduces both network overhead and carbon footprint.",
+    "top_score": 0.7309355139732361,
+    "evidence": [
+      {
+        "doc_id": "khan2025",
+        "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights",
+        "url": "https://arxiv.org/pdf/2504.06307",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7309355139732361,
+        "text": "_1) Local Inference Optimization:_ Unlike traditional cloudbased methods that rely on centralized data centers, local inference allows models to run directly on user devices while maintaining data privacy. By minimizing data transmission between clients and remote servers, this method significantly reduces both network overhead and carbon footprint [11]. To achieve efficient local inference, the framework employs a _quantization_ process [10], which lowers the numerical precision of model parameters. Specifically, we define a uniform quantization function _Qb_ ( _·_ ) that maps 32-bit weigh..."
+      },
+      {
+        "doc_id": "khan2025",
+        "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights",
+        "url": "https://arxiv.org/pdf/2504.06307",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7308224439620972,
+        "text": "_1) Local Inference Optimization:_ Unlike traditional cloudbased methods that rely on centralized data centers, local inference allows models to run directly on user devices while maintaining data privacy. By minimizing data transmission between clients and remote servers, this method significantly reduces both network overhead and carbon footprint [11]. To achieve efficient local inference, the framework employs a _quantization_ process [10], which lowers the numerical precision of model parameters. Specifically, we define a uniform quantization function _Qb_ ( _·_ ) that maps 32-bit weigh..."
+      },
+      {
+        "doc_id": "khan2025",
+        "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights",
+        "url": "https://arxiv.org/pdf/2504.06307",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7307217121124268,
+        "text": "The proposed framework (Figure. 1) tackles energy efficiency in LLM deployment through three interconnected components: local inference optimization, the selection of energyefficient LLMs, and a comprehensive evaluation methodology. These components function synergistically to reduce energy consumption without sacrificing predictive accuracy or responsiveness.\n\nFig. 1. Detailed Overview of the Proposed Optimization Framework\n\n_1) Local Inference Optimization:_ Unlike traditional cloudbased methods that rely on centralized data centers, local inference allows models to run directly on user d..."
+      },
+      {
+        "doc_id": "khan2025",
+        "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights",
+        "url": "https://arxiv.org/pdf/2504.06307",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7095423340797424,
+        "text": "The relationship between optimization and predictive performance in LLMs demonstrates that substantial efficiency gains can be achieved without meaningful sacrifices in accuracy. While optimization consistently reduces carbon emissions by 25–55%, the corresponding impact on metrics such as precision, recall, F1 score, and overall accuracy is minimal, indicating that performance remains largely preserved even as resource efficiency improves. Techniques like FrugalGPT, described by Chen et al. (2023) [5], illustrate how cascading models and leveraging prompt adaptation can reduce costs by up..."
+      },
+      {
+        "doc_id": "khan2025",
+        "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights",
+        "url": "https://arxiv.org/pdf/2504.06307",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.7027953267097473,
+        "text": "**_Abstract_ —The rapid adoption of large language models (LLMs) has led to significant energy consumption and carbon emissions, posing a critical challenge to the sustainability of generative AI technologies. This paper explores the integration of energy-efficient optimization techniques in the deployment of LLMs to address these environmental concerns. We present a case study on sentiment analysis and framework that demonstrate how strategic quantization and local inference techniques can substantially lower the carbon footprints of LLMs without compromising their operational effectivenes..."
+      }
+    ],
+    "expected_answer_value": "1"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: Tracking the runtime of a training job is an important step for estimating compute cost in GPU-based or cloud environments.",
+    "answer": "True",
+    "answer_value": "1",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "xia2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2408.04693"
+    ],
+    "explanation": "The evidence supports the statement by highlighting that runtime characteristics, including execution time breakdown, are essential for estimating the cost of training in cloud environments. This indicates that tracking runtime is indeed an important step for estimating compute costs.",
+    "supporting_materials": "Our evaluation provides unique insights into the training efficacy of sparse and dense versions of MoE models, as well as their runtime characteristics, including maximum batch size, execution time breakdown, end-to-end throughput, GPU hardware utilization, and load distribution.",
+    "top_score": 0.5754120945930481,
+    "evidence": [
+      {
+        "doc_id": "kim2025",
+        "title": "Cost-Efficient LLM Serving in the Cloud: VM Selection with KV Cache Offloading",
+        "url": "https://arxiv.org/pdf/2504.11816",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.5754120945930481,
+        "text": "**Cost Efficiency of LLM Inference in Cloud Environments:** Major cloud service providers such as AWS, GCP, and Azure offer a variety of GPU instance options with different performance levels and cost structures, providing flexibility in resource utilization [10]. However, selecting a cost-efficient GPU instance in a cloud environment is a complex task that is difficult for users to perform manually. The challenge arises because GPU instances vary significantly in price and performance (Refer to Table I), and workload characteristics require flexible KV cache offloading strategies, making o..."
+      },
+      {
+        "doc_id": "kim2025",
+        "title": "Cost-Efficient LLM Serving in the Cloud: VM Selection with KV Cache Offloading",
+        "url": "https://arxiv.org/pdf/2504.11816",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.5690053701400757,
+        "text": "**Cost Efficiency of LLM Inference in Cloud Environments:** Major cloud service providers such as AWS, GCP, and Azure offer a variety of GPU instance options with different performance levels and cost structures, providing flexibility in resource utilization [10]. However, selecting a cost-efficient GPU instance in a cloud environment is a complex task that is difficult for users to perform manually. The challenge arises because GPU instances vary significantly in price and performance (Refer to Table I), and workload characteristics require flexible KV cache offloading strategies, making o..."
+      },
+      {
+        "doc_id": "strubell2019",
+        "title": "Energy and Policy Considerations for Deep Learning in NLP",
+        "url": "https://arxiv.org/pdf/1906.02243",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.5524953007698059,
+        "text": "Table 4: Estimated cost in terms of cloud compute and electricity for training: (1) a single model (2) a single tune and (3) all models trained during R&D.\n\nabout 60 GPUs running constantly throughout the 6 month duration of the project. Table 4 lists upper and lower bounds of the estimated cost in terms of Google Cloud compute and raw electricity required to develop and deploy this model.<sup>9</sup> We see that while training a single model is relatively inexpensive, the cost of tuning a model for a new dataset, which we estimate here to require 24 jobs, or performing the full R&D require..."
+      },
+      {
+        "doc_id": "strubell2019",
+        "title": "Energy and Policy Considerations for Deep Learning in NLP",
+        "url": "https://arxiv.org/pdf/1906.02243",
+        "pages": [
+          4,
+          5
+        ],
+        "score": 0.5442642569541931,
+        "text": "The sum GPU time required for the project totaled 9998 days (27 years). This averages to\n\n> 8We approximate cloud compute cost using P100 pricing.\n\n9Based on average U.S cost of electricity of $0.12/kWh.\n\nare compatible with their setting. More explicit characterization of tuning time could also reveal inconsistencies in time spent tuning baseline models compared to proposed contributions. Realizing this will require: (1) a standard, hardwareindependent measurement of training time, such as gigaflops required to convergence, and (2) a standard measurement of model sensitivity to data and hy..."
+      },
+      {
+        "doc_id": "strubell2019",
+        "title": "Energy and Policy Considerations for Deep Learning in NLP",
+        "url": "https://arxiv.org/pdf/1906.02243",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.5303889513015747,
+        "text": "While these services provide valuable, flexible, and often relatively environmentally friendly compute resources, it is more cost effective for academic researchers, who often work for nonprofit educational institutions and whose research is funded by government entities, to pool resources to build shared compute centers at the level of funding agencies, such as the U.S. National Science Foundation. For example, an off-the-shelf GPU server containing 8 NVIDIA 1080 Ti GPUs and supporting hardware can be purchased for approximately $20,000 USD. At that cost, the hardware required to develop t..."
+      }
+    ],
+    "expected_answer_value": "1"
+  },
+  {
+    "mode": "llm",
+    "question": "For the LLaMA-65B model, what was the maximum performance improvement (latency reduction) achieved by enabling the automated resource utilization overlapping feature in the 2025 Chen et al. study?",
+    "answer": "The maximum performance improvement achieved by enabling the automated resource utilization overlapping feature for the LLaMA-65B model is 13.2%.",
+    "answer_value": "13.2",
+    "answer_unit": "percent",
+    "ref_id": [
+      "chen2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2405.01814"
+    ],
+    "explanation": "The evidence directly states that the LLaMA-65B model experiences a maximum performance improvement of 13.2% due to the automated resource utilization overlapping feature, which supports the answer provided.",
+    "supporting_materials": "As illustrated in Figure 14, the LLaMA-65B model experiences a significant improvement in performance, achieving up to a 13.2% with through automated resource utilization overlapping.",
+    "top_score": 0.7308483719825745,
+    "evidence": [
+      {
+        "doc_id": "chen2024",
+        "title": "Efficient Heterogeneous Large Language Model Decoding with Model-Attention Disaggregation",
+        "url": "https://arxiv.org/pdf/2405.01814",
+        "pages": [
+          12,
+          12
+        ],
+        "score": 0.7308483719825745,
+        "text": "As illustrated in Figure 14, the LLaMA-65B model experiences a significant improvement in performance, achieving up to a 13.2% with through automated resource utilization overlapping. The speedup is particularly notable for larger batch sizes, which produce larger KV tensors and result in greater latency reduction. The effectiveness is less pronounced for the LLaMA3-70B model, where the maximum latency reduction is only 3.5%. This is because LLaMA3-70B adopts GQA, whose KV size is 8 _×_ smaller. Consequently, there is less room for resource utilization overlapping in LLaMA3-70B.\n\n## **7 Dis..."
+      },
+      {
+        "doc_id": "chen2024",
+        "title": "Efficient Heterogeneous Large Language Model Decoding with Model-Attention Disaggregation",
+        "url": "https://arxiv.org/pdf/2405.01814",
+        "pages": [
+          12,
+          12
+        ],
+        "score": 0.7307922840118408,
+        "text": "As illustrated in Figure 14, the LLaMA-65B model experiences a significant improvement in performance, achieving up to a 13.2% with through automated resource utilization overlapping. The speedup is particularly notable for larger batch sizes, which produce larger KV tensors and result in greater latency reduction. The effectiveness is less pronounced for the LLaMA3-70B model, where the maximum latency reduction is only 3.5%. This is because LLaMA3-70B adopts GQA, whose KV size is 8 _×_ smaller. Consequently, there is less room for resource utilization overlapping in LLaMA3-70B.\n\n## **7 Dis..."
+      },
+      {
+        "doc_id": "chen2024",
+        "title": "Efficient Heterogeneous Large Language Model Decoding with Model-Attention Disaggregation",
+        "url": "https://arxiv.org/pdf/2405.01814",
+        "pages": [
+          12,
+          12
+        ],
+        "score": 0.7302032113075256,
+        "text": "<!-- Start of picture text -->\n60 Enabled 65<br>Disabled<br>55 60<br>50<br>55<br>10 20 25 50 75 100<br>Batch size Batch size<br>(a) LLaMA-65B, DOP=(2 , 2). (b) LLaMA3-70B, DOP=(2 , 4).<br>TBT (ms) TBT (ms)<br><!-- End of picture text -->\n\nFigure 14: Time between tokens (TBT) results with automatic resource utilization overlapping enabled and disabled.\n\nAs illustrated in Figure 14, the LLaMA-65B model experiences a significant improvement in performance, achieving up to a 13.2% with through automated resource utilization overlapping. The speedup is particularly notable for larger batch sizes..."
+      },
+      {
+        "doc_id": "samsi2024",
+        "title": "From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference",
+        "url": "https://arxiv.org/pdf/2310.03003",
+        "pages": [
+          2,
+          3
+        ],
+        "score": 0.6441525220870972,
+        "text": "The largest model we focus our analysis on, LLaMA 65B, is a 65 billion parameter model with an effective model dimension of 8,192 and a total of 80 layers and 64 attention heads, trained over 1.4 trillion tokens. By focusing on the largest 65B version, we also hope to study inference at its fullest scale, controlling for and benchmarking phenomena that we may not observe on LLMs of smaller size or complexity. This way, we can realistically benchmark and study the dynamics, as well as the implications, of inference energy costs and through-put on a scale consistent with state-of-the-art LLMs..."
+      },
+      {
+        "doc_id": "samsi2024",
+        "title": "From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference",
+        "url": "https://arxiv.org/pdf/2310.03003",
+        "pages": [
+          7,
+          7
+        ],
+        "score": 0.6392781734466553,
+        "text": "TABLE III: **Effects of GPU power capping on LLaMA 65B inference** : This table shows the relative performance of the LLaMA 65B model on the GSM8k dataset with a batch size of 64 and output lengths of 256, 512, 1024 using NVIDIA A100 GPUs. The GPUs were power capped at 250W, 175W and 150W. Results shown here are relative to model performance at 250W to stay consistent with the settings in the rest of the experiments described here.\n\n## _F. GPU Resource Utilization under Distributed Inference_\n\nFinally, we briefly examine the average GPU resource utilization by the 65B LLaMA model when runni..."
+      }
+    ],
+    "expected_answer_value": "13.2"
+  },
+  {
+    "mode": "llm",
+    "question": "How much does an elephant weigh?",
+    "answer": "Unable to answer with confidence based on the provided documents.",
+    "answer_value": "is_blank",
+    "answer_unit": "lbs",
+    "ref_id": [],
+    "ref_url": [],
+    "explanation": "is_blank",
+    "supporting_materials": "is_blank",
+    "top_score": 0.5002896785736084,
+    "evidence": [
+      {
+        "doc_id": "amazon2023",
+        "title": "2023 Amazon Sustainability Report",
+        "url": "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf",
+        "pages": [
+          73,
+          74
+        ],
+        "score": 0.5002896785736084,
+        "text": "**India:** Amazon has committed 83 million INR ($1 million) to the Centre for Wildlife Studies to support communities and conservation efforts in the Western Ghats. This UNESCO World Heritage Site and critical wildlife conservation zone is home to wild Asian elephants and tigers. Amazon’s funding will expand the Wild Carbon project, which will enable 2,000 farmers and their households to plant up to 300,000 trees over three years.\n\n**Learn more** about our large-scale, nature-based carbon <u>neutralization initiatives</u>\n\n```\nValue Chain\n```\n\n```\nPeople\n```\n\n```\nAppendix\n```\n\n```\n2023 Amaz..."
+      },
+      {
+        "doc_id": "samsi2024",
+        "title": "From Words to Watts: Benchmarking the Energy Costs of Large Language Model Inference",
+        "url": "https://arxiv.org/pdf/2310.03003",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.5000977516174316,
+        "text": "LLaMA comes in four sizes characterized by the number of parameters: 7 billion (LLaMA 7B), 13 billion (LLaMA 13B), 33 billion (LLaMA 33B) and 65 (LLaMA 65B). LLaMA’s model weights, across all of its variants, were publicly released under a non-commercial license, making it one of only a select few modern, state-of-the-art LLMs that have been publicly available.\n\nTo best understand the realities that lie behind the energy costs and throughput of state-of-the-art LLM inference, we focus our analysis on the largest available version of LLaMA— namely, LLaMA 65B. We also conduct analysis compari..."
+      },
+      {
+        "doc_id": "morrison2025",
+        "title": "Holistically Evaluating the Environmental Impact of Creating Language Models",
+        "url": "https://arxiv.org/pdf/2503.05804",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.5000885128974915,
+        "text": "**Hardware manufacturing** NVIDIA does not release the embodied carbon emissions or water consumption about the hardware it produces, so we assume the same embodied carbon emissions as Luccioni et al. (2023), or 3700 kg of CO2eq per 8x server node, equal 463 kg per GPU. There is little public information on how much water is required to produce a single GPU, though chip manufacturing facilities require millions of liters per day.<sup>10</sup> Some estimates<sup>11</sup> place TSMC water usage at 12.33 liters per square centimeter of hardware, which equals 100.4 liters per H100, which we use..."
+      },
+      {
+        "doc_id": "jegham2025",
+        "title": "How Hungry is AI? Benchmarking Energy, Water and Carbon Footprint of LLM Inference",
+        "url": "https://arxiv.org/pdf/2505.09598",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.5000168681144714,
+        "text": "The LLaMA family shows clear scaling effects: energy use rises from 0.443 Wh at 8B parameters to 25.202 Wh at 405B, illustrating steep power demands at high parameter counts. Additionally, the DeepSeek models reveal striking infrastructure effects. DeepSeek-R1 and DeepSeek-V3 hosted on DeepSeek’s own servers consume 29.078 Wh and 13.162 Wh, while the same models on Azure use just 7.410 Wh and 3.696 Wh, over 70% less energy. This gap highlights that hardware and data center efficiency, not model design alone, drives real-world energy use. For context, a single long query to DeepSeek-R1 (DS)..."
+      },
+      {
+        "doc_id": "luccioni2025b",
+        "title": "Bridging the Gap: Integrating Ethics and Environmental Sustainability in AI Research and Practice",
+        "url": "https://arxiv.org/pdf/2504.00797",
+        "pages": [
+          16,
+          16
+        ],
+        "score": 0.5000115036964417,
+        "text": "- [1] Mohamed Abdalla and Moustafa Abdalla. 2021. The Grey Hoodie Project: Big tobacco, big tech, and the threat on academic integrity. In Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society. 287–297.\n\n- [2] Mohamed Abdalla, Jan Philip Wahle, Terry Ruas, Aurélie Névéol, Fanny Ducel, Saif M Mohammad, and Karën Fort. 2023. The elephant in the room: Analyzing the presence of big tech in natural language processing research. arXiv preprint arXiv:2305.02797 (2023).\n\n- [3] AI Safety Summit. 2023. The Bletchley Declaration by Countries Attending the AI Safety Summit, 1-2 Novembe..."
+      }
+    ],
+    "expected_answer_value": "is_blank"
+  },
+  {
+    "mode": "llm",
+    "question": "Which of the following five large NLP DNNs has the highest energy consumption: Meena, T5, GPT-3, GShard-600B, or Switch Transformer?",
+    "answer": "GPT-3",
+    "answer_value": "GPT-3",
+    "answer_unit": "no specific unit",
+    "ref_id": [
+      "patterson2021"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2104.10350"
+    ],
+    "explanation": "The evidence clearly lists the energy consumption for each model, and GPT-3 has the highest value at 1,287 MWh, making it the model with the highest energy consumption among the options provided.",
+    "supporting_materials": "EnergyConsumption(MWh): GPT-3: 1,287",
+    "top_score": 0.7302091717720032,
+    "evidence": [
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          13,
+          13
+        ],
+        "score": 0.7302091717720032,
+        "text": "<u>Google Flights estimate for the emissions of a direct round trip of a whole passenger jet between San</u> Francisco and New York is 180 tCO 2 e (see Table 2 and Appendix A). T5 training emissions are ~26%, Meena is 53%, Gshard-600B is ~2%, Switch Transformer is 32%, and GPT-3 is ~305% of such a round trip.\n\nAnother comparison point is to <u>Bitcoin. Every purchase that transfers bitcoin currently costs ~700 KWh or</u> ~0.3 tCO 2 e, equivalent to the CO 2 e produced by ~750,000 credit card swipes. Bitcoin miners use custom chips that operate continuously 24/7 until they fail. Estimates of..."
+      },
+      {
+        "doc_id": "wu2021a",
+        "title": "Sustainable AI: Environmental Implications, Challenges and Opportunities",
+        "url": "https://arxiv.org/pdf/2111.00364",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.7280056476593018,
+        "text": "We compare the carbon footprint of Facebook’s production ML models with seven large-scale, open-source (OSS) models: BERT-NAS, T5, Meena, GShard-600B, Switch Transformer, and GPT-3. Note, we present the operational carbon footprint of the OSS model training from [28], [21]. The operational carbon footprint results can vary based on the exact AI systems used and the carbon intensity of the energy mixture. Models with more parameters do not necessarily result in longer training time nor higher carbon emissions. Training the Switch Transformer model equipped with 1.5 trillion parameters [29] p..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.7277638912200928,
+        "text": "**Abstract:** The computation demand for machine learning (ML) has grown rapidly recently, which comes with a number of costs. Estimating the energy cost helps measure its environmental impact and finding greener strategies, yet it is <u>challenging without detailed information.</u>\n\nWe calculate the energy use and carbon footprint of several recent large models—T5 , <u>Meena , GShard, Switch Transformer , and GPT-3 —and refine earlier estimates for the neural architecture search that found Evolved Transformer .</u>\n\nWe highlight the following opportunities to improve energy efficiency and..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.7277384400367737,
+        "text": "As ML models increase in scale, a general trend is that they become more accurate and more capable. However, larger models translate to greater computing demands and, by extension, greater energy demands. We focus on natural language processing (NLP) because it is important in Google products and because of the recent development of many large NLP models, e.g., T5 [Raf19], Meena [Adi20], GShard [Lep20], Switch Transformer [Fed21], and GPT-3 [Bro20]. Recent studies attempt to evaluate the environmental impact of this trend in NLP, which is difficult [Str19]. Here we investigate and share the..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          13,
+          13
+        ],
+        "score": 0.7272325754165649,
+        "text": "One issue that was difficult for us during our investigation was to put into perspective the 4 to 552 tCO 2 e from training of these NLP models, which the next subsection explores.\n\n### **4.8 How does training a large NLP model compare to other activities?**\n\n<u>Google Flights estimate for the emissions of a direct round trip of a whole passenger jet between San</u> Francisco and New York is 180 tCO 2 e (see Table 2 and Appendix A). T5 training emissions are ~26%, Meena is 53%, Gshard-600B is ~2%, Switch Transformer is 32%, and GPT-3 is ~305% of such a round trip."
+      }
+    ],
+    "expected_answer_value": "GPT-3"
+  },
+  {
+    "mode": "llm",
+    "question": "How many days of CO₂ emissions from an average American life are equivalent to training BERT base?",
+    "answer": "2.93 days of CO₂ emissions from an average American life are equivalent to training BERT base.",
+    "answer_value": "2.93",
+    "answer_unit": "days",
+    "ref_id": [
+      "patterson2021"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2104.10350"
+    ],
+    "explanation": "The evidence states that training BERT produces approximately 0.13 tCO₂e. By calculating the average daily CO₂ emissions for an American (approximately 0.0444 tCO₂e), we find that the emissions from training BERT are equivalent to about 2.93 days of emissions from an average American.",
+    "supporting_materials": "training consumed ~2.8 MWh and produced 0.13 tCO2e",
+    "top_score": 0.7035118937492371,
+    "evidence": [
+      {
+        "doc_id": "strubell2019",
+        "title": "Energy and Policy Considerations for Deep Learning in NLP",
+        "url": "https://arxiv.org/pdf/1906.02243",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.7035118937492371,
+        "text": "|4<br>Experimental results|||Estimated cos|t (USD)|\n|---|---|---|---|---|\n|4.1<br>Cost of training|Models<br>1|Hours<br>120|Cloud compute<br>$52–$175|Electricity<br>$5|\n|Table3lists CO2 emissions and estimated cost of|24|2880|$1238–$4205|$118|\n|training the models described in §2.1. Of note is|4789|239,942|$103k–$350k|$9870|\n\nTable 3 lists CO2 emissions and estimated cost of training the models described in §2.1. Of note is that TPUs are more cost-efficient than GPUs on workloads that make sense for that hardware (e.g. BERT). We also see that models emit substantial carbon emissions; traini..."
+      },
+      {
+        "doc_id": "strubell2019",
+        "title": "Energy and Policy Considerations for Deep Learning in NLP",
+        "url": "https://arxiv.org/pdf/1906.02243",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.6948047876358032,
+        "text": "BERT. The BERT model (Devlin et al., 2019) provides a Transformer-based architecture for building contextual representations similar to ELMo, but trained with a different language modeling objective. BERT substantially improves accuracy on tasks requiring sentence-level representations such as question answering and natural language infer-\n\nence. Devlin et al. (2019) report that the BERT base model (110M parameters) was trained on 16 TPU chips for 4 days (96 hours). NVIDIA reports that they can train a BERT model in 3.3 days (79.2 hours) using 4 DGX-2H servers, totaling 64 Tesla V100 GPUs (..."
+      },
+      {
+        "doc_id": "strubell2019",
+        "title": "Energy and Policy Considerations for Deep Learning in NLP",
+        "url": "https://arxiv.org/pdf/1906.02243",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.6531095504760742,
+        "text": "ence. Devlin et al. (2019) report that the BERT base model (110M parameters) was trained on 16 TPU chips for 4 days (96 hours). NVIDIA reports that they can train a BERT model in 3.3 days (79.2 hours) using 4 DGX-2H servers, totaling 64 Tesla V100 GPUs (Forster et al., 2019). GPT-2. This model is the latest edition of OpenAI’s GPT general-purpose token encoder, also based on Transformer-style self-attention and trained with a language modeling objective (Radford et al., 2019). By training a very large model on massive data, Radford et al. (2019) show high zero-shot performance on question a..."
+      },
+      {
+        "doc_id": "strubell2019",
+        "title": "Energy and Policy Considerations for Deep Learning in NLP",
+        "url": "https://arxiv.org/pdf/1906.02243",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.6338239312171936,
+        "text": "ence. Devlin et al. (2019) report that the BERT base model (110M parameters) was trained on 16 TPU chips for 4 days (96 hours). NVIDIA reports that they can train a BERT model in 3.3 days (79.2 hours) using 4 DGX-2H servers, totaling 64 Tesla V100 GPUs (Forster et al., 2019). GPT-2. This model is the latest edition of OpenAI’s GPT general-purpose token encoder, also based on Transformer-style self-attention and trained with a language modeling objective (Radford et al., 2019). By training a very large model on massive data, Radford et al. (2019) show high zero-shot performance on question a..."
+      },
+      {
+        "doc_id": "dodge2022",
+        "title": "Measuring the Carbon Intensity of AI in Cloud Instances",
+        "url": "https://arxiv.org/pdf/2206.05229",
+        "pages": [
+          10,
+          10
+        ],
+        "score": 0.6252965331077576,
+        "text": "|||Hour|0:00|03:00|06:00|09:00|12:00|15:00|18:00|21:00|\n|---|---|---|---|---|---|---|---|---|---|---|\n|BERT|Central|Day1|2,381|2,341|2,210|2,252|2,354|2,391|2,410|2,403|\n|finetune|US|Day2|2,330|2,249|2,204|2,299|2,320|2,317|2,339|2,344|\n|||Day3|2,430|2,339|2,257|2,313|2,393|2,374|2,317|2,331|\n\nTable 3. How do emissions vary throughout different times of day? We present the emissions produced by the BERT finetuning experiment described in §4 had it run at different times in the Central US region, on three separate days.\n\n## **5.2 Time of Day**"
+      }
+    ],
+    "expected_answer_value": "14.4"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: The Transformer architecture eventuallly outperforms the Evolved Transformers architecture on the WMT'24 EN-DE BLUE task as the model sizes grow.",
+    "answer": "False",
+    "answer_value": "0",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "patterson2021"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2104.10350"
+    ],
+    "explanation": "The evidence shows that the Evolved Transformer architecture outperforms the Transformer architecture in terms of accuracy and energy efficiency, contradicting the claim that the Transformer eventually outperforms the Evolved Transformers as model sizes grow.",
+    "supporting_materials": "The Evolved Transformer... converges to the same accuracy with 25% less energy expenditure than the vanilla Transformer (Big) model on WMT English to German translation.",
+    "top_score": 0.5089002251625061,
+    "evidence": [
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.5089002251625061,
+        "text": "**Figure 4: Reproduction of Figure 4 from So** **_et al._ Dots on the blue line represent various sizes of plain Transformer NLP models, while dots on the red line represent various sizes of the open-sourced Evolved Transformer architecture that was discovered by the neural architecture search run in [So19]** **_._ Red arrows are at 131M and 210M parameters and show that an Evolved Transformer can achieve higher accuracy at less cost: it runs 1.3X faster and produces 1.3x less CO 2 e.**\n\n### **4.2 There are more resources used for training than the only final training run**"
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.5050994157791138,
+        "text": "**Figure 4: Reproduction of Figure 4 from So** **_et al._ Dots on the blue line represent various sizes of plain Transformer NLP models, while dots on the red line represent various sizes of the open-sourced Evolved Transformer architecture that was discovered by the neural architecture search run in [So19]** **_._ Red arrows are at 131M and 210M parameters and show that an Evolved Transformer can achieve higher accuracy at less cost: it runs 1.3X faster and produces 1.3x less CO 2 e.**\n\n### **4.2 There are more resources used for training than the only final training run**\n\n[Str19] and oth..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.5040698051452637,
+        "text": "This lack of training development costs is one example of how adopting higher standards for measuring and reporting ML model energy requirements would lead to a better understanding of cost-accuracy tradeoffs in ML models, potentially further reducing overall emissions by empowering more informed ML model selection, as the next subsection explains.\n\n**Figure 4: Reproduction of Figure 4 from So** **_et al._ Dots on the blue line represent various sizes of plain Transformer NLP models, while dots on the red line represent various sizes of the open-sourced Evolved Transformer architecture that..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.502353310585022,
+        "text": "The Evolved Transformer (Medium) model discovered by So et al. [So19] using neural architecture search (see Section 4.1) uses 1.6X fewer FLOPS and 1.1X–1.3X less time than Transformer (Big) at slightly higher accuracy (see Table 1 and Appendix A)<sup>6</sup> .\n\n_Business Rationale_ . Training faster saves ML researchers time as well as saves their organizations money and reduces CO 2 e.\n\n### **2.2 Processor improvement**\n\nGoogle’s custom TPU v2 processor runs Transformer (Big) 4.3X faster than P100 GPUs and Evolved Transformer (Medium) 5.2X faster.<sup>7</sup> TPU v2 also uses less power: 1..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          3,
+          4
+        ],
+        "score": 0.5014181733131409,
+        "text": "- 5 Training on TPU v3 instead of TPU v2 takes Transformer (Big) 0.44 days (averaging 61 TFLOPS/s) and 0.37 days (47 TFLOPS/s) for Evolved Transformer (Medium). For TPU v4, the respective numbers are 0.25 days (93 TFLOPS/s) and 0.19 days (73 TFLOPS/s). TPU v3 shrinks energy consumed and gross and net CO 2 e from TPU v2 by ~1.4X for Transformer and by ~1.3X for Evolved Transformer.\n\n3\n\n### **2.1 Algorithm/program improvement**\n\nThe Evolved Transformer (Medium) model discovered by So et al. [So19] using neural architecture search (see Section 4.1) uses 1.6X fewer FLOPS and 1.1X–1.3X less time..."
+      }
+    ],
+    "expected_answer_value": "0"
+  },
+  {
+    "mode": "llm",
+    "question": "What dataset of 5,842 labeled entries was used to test energy-efficient large language models in the financial domain?",
+    "answer": "Financial Sentiment Analysis",
+    "answer_value": "5842",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "khan2025"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2504.06307"
+    ],
+    "explanation": "The dataset 'Financial Sentiment Analysis' is explicitly mentioned in the evidence as containing 5,842 labeled entries, making it the dataset used to test energy-efficient large language models in the financial domain.",
+    "supporting_materials": "Our dataset, **Financial Sentiment Analysis** [20], comprises 5,842 entries organized into two columns: **”text”** and **”label”**.",
+    "top_score": 0.730999767780304,
+    "evidence": [
+      {
+        "doc_id": "khan2025",
+        "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights",
+        "url": "https://arxiv.org/pdf/2504.06307",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.730999767780304,
+        "text": "Our dataset, **Financial Sentiment Analysis** [20], comprises 5,842 entries organized into two columns: **”text”** and **”label”** . The **”text”** column contains the textual data for analysis, while the **”label”** column indicates the sentiment classification (e.g., positive, negative, or neutral). The dataset is well-structured and contains no missing values, making it highly suitable for sentiment analysis tasks in machine learning studies Figure. 2.\n\n## V. RESULTS\n\n## _A. Accuracy vs Memory Usage_"
+      },
+      {
+        "doc_id": "khan2025",
+        "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights",
+        "url": "https://arxiv.org/pdf/2504.06307",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.7309936881065369,
+        "text": "Our dataset, **Financial Sentiment Analysis** [20], comprises 5,842 entries organized into two columns: **”text”** and **”label”** . The **”text”** column contains the textual data for analysis, while the **”label”** column indicates the sentiment classification (e.g., positive, negative, or neutral). The dataset is well-structured and contains no missing values, making it highly suitable for sentiment analysis tasks in machine learning studies Figure. 2.\n\n## V. RESULTS\n\n## _A. Accuracy vs Memory Usage_\n\nThe results in Table III show that optimization did not introduce a performance trade-o..."
+      },
+      {
+        "doc_id": "khan2025",
+        "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and Case Study Insights",
+        "url": "https://arxiv.org/pdf/2504.06307",
+        "pages": [
+          4,
+          4
+        ],
+        "score": 0.7309837341308594,
+        "text": "- **Qwen2-7B-Instruct** : A transformer-based language model tuned for general-purpose tasks.\n\n- **Mistral-7B-Instruct-v0.3** : An instruction-tuned model optimized for efficient NLP tasks.\n\n- **LLaVA-Llama3-Instruct** : A fine-tuned version of Llama-3 Instruct with improvements in multiple benchmarks.\n\n## _B. Data_\n\nOur dataset, **Financial Sentiment Analysis** [20], comprises 5,842 entries organized into two columns: **”text”** and **”label”** . The **”text”** column contains the textual data for analysis, while the **”label”** column indicates the sentiment classification (e.g., positive..."
+      },
+      {
+        "doc_id": "zschache2025",
+        "title": "Comparing energy consumption and accuracy in text classification inference",
+        "url": "https://arxiv.org/pdf/2508.14170",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.5279965400695801,
+        "text": "The column ‘Themenkomplex’ (topic) contains the category of the text. Before publication, the texts were manually cleaned by e.g. removing any personal information or templated repetitions.\n\nWe scraped the dataset from the website and restricted it to entries for which the topic occurs at least 10 times, resulting in 378 entries across 14 categories. While this dataset size is relatively small compared to typical benchmarks in NLP research, it is representative of real-world scenarios in public administration where labeled data is often limited and expensive to obtain. The domain-specific n..."
+      },
+      {
+        "doc_id": "zschache2025",
+        "title": "Comparing energy consumption and accuracy in text classification inference",
+        "url": "https://arxiv.org/pdf/2508.14170",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.5128200650215149,
+        "text": "The dataset was split into half: 189 entries for training and 189 entries for testing. This unconventional 50:50 split, rather than the standard 70:30 or 80:20 split, was deliberately chosen for several reasons. First, with only 378 total entries across 14 categories (averaging 27 instances per category), a larger test set ensures statistical reliability of our performance metrics, particularly for minority classes. Second, since our primary focus is on inference energy consumption rather than achieving maximum accuracy through extensive training, we prioritize having a representative test..."
+      }
+    ],
+    "expected_answer_value": "Financial Sentiment Analysis"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: Eight T4 spot instances could be more cost-efficient than a DGX-2 node for distributed training.",
+    "answer": "True",
+    "answer_value": "1",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "erben2023"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2306.03163"
+    ],
+    "explanation": "The evidence directly supports the statement by confirming that using multiple T4 spot instances is more cost-efficient compared to a DGX-2 node, thus validating the claim.",
+    "supporting_materials": "By leveraging multiple spot instances with one T4 GPU each, we can be more cost-efficient than a DGX-2 node.",
+    "top_score": 0.7301626801490784,
+    "evidence": [
+      {
+        "doc_id": "erben2023",
+        "title": "How Can We Train Deep Learning Models Across Clouds and Continents? An Experimental Study",
+        "url": "https://arxiv.org/pdf/2306.03163",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.7301626801490784,
+        "text": "- (1) **We analyze the impact of multi-cloud training with spot and on-demand instances from Google Cloud (GC), Microsoft Azure, Amazon Web Services (AWS), andLambdaLabsoncost-efficiency.** Whilewefindperformance penalties due to remote versus on-premise compute resources, the throughput still scales with increased computing power. By leveraging multiple spot instances with one T4 GPU each, we can be more cost-efficient than a DGX-2 node or the very competitively priced A10 offerings from LambdaLabs.\n\n- (2) **We investigate the suitability of geo-distributed training for various CV and NLP..."
+      },
+      {
+        "doc_id": "erben2023",
+        "title": "How Can We Train Deep Learning Models Across Clouds and Continents? An Experimental Study",
+        "url": "https://arxiv.org/pdf/2306.03163",
+        "pages": [
+          10,
+          10
+        ],
+        "score": 0.7296132445335388,
+        "text": "In summary, the lower spot prices for older GPUs allow us to train models more cost-efficiently when task granularity allows it and get more value per $ when training on the 8xT4 or 8xA10 compared to an DGX-2 node. Combining multiple nodes with single GPUs with lower bandwidths enables scaling that was previously impossible to achievewithoutresortingtomuchmorepowerfulGPUs. Distributed spot instance pricing opens up a new value proposition compared to on-demand offerings that can even compete with the competitive pricing of smaller cloud providers.\n\n**Spot VM Interruption Frequency.** While..."
+      },
+      {
+        "doc_id": "erben2023",
+        "title": "How Can We Train Deep Learning Models Across Clouds and Continents? An Experimental Study",
+        "url": "https://arxiv.org/pdf/2306.03163",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.7294232249259949,
+        "text": "We aim to develop guidelines and help practitioners assess under which conditions they can cost-efficiently speed up their training tasks with spot instances. To be able to do this, they need a precise definition of the model size at which geo-distributed spot training becomes viable, what hardware can be used for it, and what the minimum bandwidth and latency are. We close this research gap by performing a comprehensive analysis of multiple DL tasks from CV and NLP, breaking down how time is spent in each epoch, and comparing them to non-distributed runs to quantify the advantages and disa..."
+      },
+      {
+        "doc_id": "erben2023",
+        "title": "How Can We Train Deep Learning Models Across Clouds and Continents? An Experimental Study",
+        "url": "https://arxiv.org/pdf/2306.03163",
+        "pages": [
+          11,
+          11
+        ],
+        "score": 0.7285057902336121,
+        "text": "**Geo-distributed multi-cloud training is possible and is costefficient.** EvenwiththecurrentteethingpainsofHivemind,wegota speedup in all of our experimental setups of intra-zone, transatlantic, and intercontinental settings as long as the granularity of the task permitted it. Using older and cheaper Tesla GPUs at spot pricing is not only more cost-efficient than the DGX-2 offering, but even trumps the competitive pricing model of LambdaLabs, all while including egress costs. Our network profiling showed that the current training limitations are not primarily the bandwidth but rather the i..."
+      },
+      {
+        "doc_id": "erben2023",
+        "title": "How Can We Train Deep Learning Models Across Clouds and Continents? An Experimental Study",
+        "url": "https://arxiv.org/pdf/2306.03163",
+        "pages": [
+          10,
+          10
+        ],
+        "score": 0.7284468412399292,
+        "text": "the horizontal line, we are faster (and vice versa). We circle the new value propositions that we enable in both figures. Our hardware setups have additional key characteristics: They are resilient by default to interruptions due to running in a decentralized fashion and they enable the combination of more GPUs than cloud providers offer in a single node. Currently, common hardware configurations (DGX) allow up to eight GPUs connected via NVLink, and with older hardware, only up to 4xT4s connected via PCIe at 10 GB/s between GPUs (with GC). We were able to combine eight single GPU nodes fro..."
+      }
+    ],
+    "expected_answer_value": "1"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: The 2023 US Executive Order regarding AI mentioned the greenhouse gas emissions or energy usage of AI.",
+    "answer": "The statement is false.",
+    "answer_value": "0",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "luccioni2025b"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2504.00797"
+    ],
+    "explanation": "The evidence clearly indicates that the 2023 US Executive Order did not address the greenhouse gas emissions or energy usage of AI, confirming that the statement is false.",
+    "supporting_materials": "the 2023 US Executive Order regarding AI did not mention AI’s greenhouse gas emissions nor energy usage",
+    "top_score": 0.7224065661430359,
+    "evidence": [
+      {
+        "doc_id": "luccioni2025b",
+        "title": "Bridging the Gap: Integrating Ethics and Environmental Sustainability in AI Research and Practice",
+        "url": "https://arxiv.org/pdf/2504.00797",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.7224065661430359,
+        "text": "A pivotal example of top-down governance is the European Union’s AI Act, which draws from broadly defined ethical principles to inform its regulations [39]. In fact, the text of the Act demonstrates considerable progress following the recent European dialogues, seeking to regulate AI applications that may infringe on human rights, adhering, among others, to the ethical principles of human oversight, human agency and transparency. Moreover, the AI Act’s foundation on the premise that risk equates to potential human rights harms [152] echoes one of the longstanding traditions in AI ethics of..."
+      },
+      {
+        "doc_id": "dodge2022",
+        "title": "Measuring the Carbon Intensity of AI in Cloud Instances",
+        "url": "https://arxiv.org/pdf/2206.05229",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.6187543869018555,
+        "text": "Climate change is an increasing threat to life on our planet, which disproportionately impacts the most disadvantaged communities and fragile ecosystems [28]. One of the main drivers of climate change is carbon dioxide, or CO2, which contributes to the greenhouse effect by trapping the heat from the sun within the atmosphere without letting it dissipate. CO2 (and other types of _greenhouse gases_ , such as methane and ozone) are emitted by many sources, some natural but most man-made, such as the burning of oil and gas for transportation and heating or for industrial processes such as smelt..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          14,
+          14
+        ],
+        "score": 0.6145247220993042,
+        "text": "Kai Ebert, Nicolas Alder, Ralf Herbrich, and Philipp Hacker\n\n## **B Policy Proposals Overview**\n\n**Table 1: Summary of Policy Proposals for AI and Environmental Impact**\n\n|**Area**|**Policy Proposal and Description**|\n|---|---|\n|**Energy and Environmental**<br>**Reporting**|**Energy consumption from inferences**: Include energy consumption from<br>both single and cumulative inferences in reporting.<br>**Indirect emissions and water consumption**: Mandate reporting of indirect<br>emissions and water use in AI applications.<br>**Cumulative server energy reporting**: Require energy consumption..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.5919578075408936,
+        "text": "5) The AI Act fails to address the greenhouse gas (GHG) emissions generated by AI applications, for instance in sectors like oil and gas exploration [4, 37]. For example, a recent investigation has revealed Microsoft’s aggressive pitch of its AI models to ExxonMobile to optimize fossil fuel exploration [35]. Leaving such applications with significant climate effects out of scope creates a notable reporting gap.\n\n6) The Act also neglects to address the substantial water consumption, a key concern in data center operations [4]. While the Energy Efficiency Directive mandates reporting of water..."
+      },
+      {
+        "doc_id": "jegham2025",
+        "title": "How Hungry is AI? Benchmarking Energy, Water and Carbon Footprint of LLM Inference",
+        "url": "https://arxiv.org/pdf/2505.09598",
+        "pages": [
+          15,
+          15
+        ],
+        "score": 0.591620683670044,
+        "text": "- [35] World Resources Institute. Guidance for calculating water use embedded in purchased electricity. Technical report, World Resources Institute, 2024.\n\n- [36] Microsoft Corporation. 2024 environmental sustainability report data fact sheet. `https: //cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/ documents/presentations/CSR/2024-Environmental-Sustainability-ReportData-Fact.pdf` , May 2024. Comprehensive environmental metrics including greenhouse gas emissions, energy consumption, water usage, waste management, and land protection for fiscal year 2023."
+      }
+    ],
+    "expected_answer_value": "0"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: Under Germany's 2023 Energy Efficiency Act, data centers must run on 100% renewable energy by January 1, 2027.",
+    "answer": "True",
+    "answer_value": "1",
+    "answer_unit": "boolean",
+    "ref_id": [
+      "ebert2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2410.06681"
+    ],
+    "explanation": "The evidence clearly indicates that the Energy Efficiency Act mandates data centers to transition to 100% renewable energy by the specified date, confirming the statement as true.",
+    "supporting_materials": "The Act... requires data centers to run on 50 % renewable energy, increasing that factor to 100% by 1 Jan 2027 (Sec. 11).",
+    "top_score": 0.7304162383079529,
+    "evidence": [
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7304162383079529,
+        "text": "In Germany, the Energy Efficiency Act of 8 Nov 2023 implements the EED and establishes a national reporting scheme and additional requirements, including specific efficiency and renewable energy targets for data centers. The Act broadens the scope of the reporting obligation to include even smaller data centers, upwards of 300 kW (Sec. 13). It also expands the duty to set up an energy management system to data centers and operators of ICT—i.e., customers of colocation data centers—of more than 50 kW (Sec. 12). Most importantly, it sets targets on energy efficiency and renewable energy use,..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7303834557533264,
+        "text": "In Germany, the Energy Efficiency Act of 8 Nov 2023 implements the EED and establishes a national reporting scheme and additional requirements, including specific efficiency and renewable energy targets for data centers. The Act broadens the scope of the reporting obligation to include even smaller data centers, upwards of 300 kW (Sec. 13). It also expands the duty to set up an energy management system to data centers and operators of ICT—i.e., customers of colocation data centers—of more than 50 kW (Sec. 12). Most importantly, it sets targets on energy efficiency and renewable energy use,..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7291619181632996,
+        "text": "up certain minimum criteria for energy audits (Annex VI EED) and refers to the relevant international or European standards (Recital 80 EED). The legal minimum criteria, however, do not dictate how energy consumption should be measured.\n\n## **4.3 German 2023 Energy Efficiency Act**\n\nIn Germany, the Energy Efficiency Act of 8 Nov 2023 implements the EED and establishes a national reporting scheme and additional requirements, including specific efficiency and renewable energy targets for data centers. The Act broadens the scope of the reporting obligation to include even smaller data centers,..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.6392030715942383,
+        "text": "> 2WUE measures the amount of water used in the data center’s cooling and other operations relative to the energy consumed by the IT stack.\n\n> 3ERF represents the percentage of energy that is reused from a data center’s waste energy, showing the efficiency of energy recovery.\n\n> 4REF indicates the proportion of a data center’s energy that comes from renewable sources.\n\nup certain minimum criteria for energy audits (Annex VI EED) and refers to the relevant international or European standards (Recital 80 EED). The legal minimum criteria, however, do not dictate how energy consumption should b..."
+      },
+      {
+        "doc_id": "amazon2023",
+        "title": "2023 Amazon Sustainability Report",
+        "url": "https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf",
+        "pages": [
+          26,
+          26
+        ],
+        "score": 0.5957345962524414,
+        "text": "We launched our first on-site solar array with energy storage projects in Bakersfield and San Bernardino, California, in 2023. Additionally, we reached our first on-site solar array deals in Ohio and in Belgium and Saudi Arabia. These projects bring the total number of rooftop solar projects across Amazon and Whole Foods Market facilities to 270, with a total capacity of 344 MW. Altogether, these projects avoid roughly 17 million metric tons of CO2e each year.\n\n###### Data Centers Powered with Renewable Energy\n\nAmazon’s energy supply from utilities, combined with the renewable energy we pro..."
+      }
+    ],
+    "expected_answer_value": "1"
+  },
+  {
+    "mode": "llm",
+    "question": "Out of a sample of 60 papers from top AI conferences, how many papers from ACL targeted both accuracy and efficiency?",
+    "answer": "6 papers",
+    "answer_value": "6",
+    "answer_unit": "papers",
+    "ref_id": [
+      "schwartz2019"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/1907.10597"
+    ],
+    "explanation": "The evidence indicates that 90% of the sampled ACL papers focus on accuracy, while only 10% focus on efficiency. This suggests that the number of papers addressing both aspects is limited, leading to the conclusion that approximately 6 papers (10% of 60) may target both accuracy and efficiency.",
+    "supporting_materials": "90% of ACL papers target accuracy, 10% argue for a new efficiency result.",
+    "top_score": 0.7310259938240051,
+    "evidence": [
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7310259938240051,
+        "text": "To demonstrate the prevalence of Red AI, we sampled 60 papers from top AI conferences (ACL,<sup>3</sup> NeurIPS,<sup>4</sup> and CVPR<sup>5</sup> ). For each paper we noted whether the authors claim their main contribution to be (a) an improvement to accuracy or some related measure, (b) an improvement to efficiency, (c) both, or (d) other. As shown in Figure 2, in all conferences we considered, a large majority of the papers target accuracy (90% of ACL papers, 80% of NeurIPS papers and 75% of CVPR papers). Moreover, for both empirical AI conferences (ACL and CVPR) only a small portion (10%..."
+      },
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7310004234313965,
+        "text": "by pushing the boundaries of AI. Our exposition here is meant to highlight areas where computational expense is high, and to present each as an opportunity for developing more efficient techniques.\n\nTo demonstrate the prevalence of Red AI, we sampled 60 papers from top AI conferences (ACL,<sup>3</sup> NeurIPS,<sup>4</sup> and CVPR<sup>5</sup> ). For each paper we noted whether the authors claim their main contribution to be (a) an improvement to accuracy or some related measure, (b) an improvement to efficiency, (c) both, or (d) other. As shown in Figure 2, in all conferences we considered,..."
+      },
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          2,
+          3
+        ],
+        "score": 0.7305095791816711,
+        "text": "This section analyzes the factors contributing to Red AI and shows how it is resulting in diminishing returns over time (see Figure 3). We note again that Red AI work is valuable, and in fact, much of it contributes to what we know\n\n2\n\nFigure 2: AI papers tend to target _accuracy_ rather than _efficiency_ . The figure shows the proportion of papers that target accuracy, efficiency, both or other from a sample of 60 papers from top AI conferences.\n\nby pushing the boundaries of AI. Our exposition here is meant to highlight areas where computational expense is high, and to present each as an o..."
+      },
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          3,
+          4
+        ],
+        "score": 0.6502435207366943,
+        "text": "Equation 1 is a simplification (e.g., different hyperparameter assignments can lead to different costs for processing a single example). It also ignores other factors such as the number of training epochs. Nonetheless, it illustrates three\n\n> 3https://acl2018.org\n\n> 4https://nips.cc/Conferences/2018\n\n> 5http://cvpr2019.thecvf.com\n\n> 6Interestingly, many NeurIPS papers included convergence rates or regret bounds which describe performance as a function of examples or iterations, thus targeting efficiency (55%). This indicates an increased awareness of the importance of this concept, at least..."
+      },
+      {
+        "doc_id": "schwartz2019",
+        "title": "Green AI",
+        "url": "https://arxiv.org/pdf/1907.10597",
+        "pages": [
+          8,
+          8
+        ],
+        "score": 0.5129916667938232,
+        "text": "In addition to reporting the FPO cost of the final reported number, we encourage researchers to report the budget/accuracy curve observed during training. In a recent paper [9], we observed that selecting the better performing model on a given task depends highly on the amount of compute available during model development. We introduced a method for computing the expected best validation performance of a model as a function of the given budget. We argue that reporting this curve will allow users to make wiser decisions about their selection of models and highlight the stability of different..."
+      }
+    ],
+    "expected_answer_value": "2"
+  },
+  {
+    "mode": "llm",
+    "question": "According to recent estimates, what percentage of a model's total lifecycle energy use can inference account for?",
+    "answer": "Inference can account for up to 90% of a model's total lifecycle energy use.",
+    "answer_value": "90",
+    "answer_unit": "percent",
+    "ref_id": [
+      "jegham2025"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2505.09598"
+    ],
+    "explanation": "The evidence directly states that inference is emerging as the primary contributor to environmental costs, with estimates indicating it can account for up to 90% of total lifecycle energy use, thus providing a clear and supported answer to the question.",
+    "supporting_materials": "Recent estimates suggest inference can account for up to 90% of a model’s total lifecycle energy use.",
+    "top_score": 0.7309524416923523,
+    "evidence": [
+      {
+        "doc_id": "jegham2025",
+        "title": "How Hungry is AI? Benchmarking Energy, Water and Carbon Footprint of LLM Inference",
+        "url": "https://arxiv.org/pdf/2505.09598",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.7309524416923523,
+        "text": "However, the advancement of LLMs does involve shortcomings in environmental aspects. Training GPT-3 is estimated to consume 1,287 megawatt-hours (MWh) of electricity and emit over 550 metric tons of CO2 equivalent (CO2e) [12], while requiring more than 700 kiloliters (kL) of water for cooling alone [13], enough to fill a quarter of an Olympic-sized swimming pool. Yet while training has been the focus of sustainability discussions, inference is emerging as the primary contributor to environmental costs. In contrast to training, which is conducted once or at intervals, inference occurs consis..."
+      },
+      {
+        "doc_id": "jegham2025",
+        "title": "How Hungry is AI? Benchmarking Energy, Water and Carbon Footprint of LLM Inference",
+        "url": "https://arxiv.org/pdf/2505.09598",
+        "pages": [
+          1,
+          1
+        ],
+        "score": 0.7309446930885315,
+        "text": "Large language models (LLMs) have moved beyond research labs and are now embedded in search engines, virtual assistants, education platforms, and enterprise tools [1, 2, 3, 4]. Models like GPT-4o [5] and Claude-3.7 Sonnet [6] represent state-of-the-art systems, while open-source alternatives such as LLaMA-3 [7] and DeepSeek-V3 [8] reflect growing accessibility and experimentation. On top of that, the emergence of reasoning models such as DeepSeek-R1 [9], o1 [10], and o3-mini [11] marks a shift toward multi-step logic and chain-of-thought reasoning.\n\nHowever, the advancement of LLMs does inv..."
+      },
+      {
+        "doc_id": "jegham2025",
+        "title": "How Hungry is AI? Benchmarking Energy, Water and Carbon Footprint of LLM Inference",
+        "url": "https://arxiv.org/pdf/2505.09598",
+        "pages": [
+          1,
+          2
+        ],
+        "score": 0.7309176921844482,
+        "text": "However, the advancement of LLMs does involve shortcomings in environmental aspects. Training GPT-3 is estimated to consume 1,287 megawatt-hours (MWh) of electricity and emit over 550 metric tons of CO2 equivalent (CO2e) [12], while requiring more than 700 kiloliters (kL) of water for cooling alone [13], enough to fill a quarter of an Olympic-sized swimming pool. Yet while training has been the focus of sustainability discussions, inference is emerging as the primary contributor to environmental costs. In contrast to training, which is conducted once or at intervals, inference occurs consis..."
+      },
+      {
+        "doc_id": "luccioni2024",
+        "title": "Power Hungry Processing: Watts Driving the Cost of AI Deployment?",
+        "url": "https://arxiv.org/pdf/2311.16863",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.726655125617981,
+        "text": "Understanding the environmental impacts of different industries is an important first step towards developing effective strategies to mitigate those impacts. For newer industries such as information and communication technologies (ICT) of which Artificial Intelligence (AI) and Machine Learning (ML) are considered to be a part of, more work is needed to understand the extent of their environmental impacts and the factors that influence it. Between 2017 and 2021, the electricity used by Meta, Amazon, Microsoft, and Google, the main providers of commercially-available cloud compute, more than..."
+      },
+      {
+        "doc_id": "patterson2021",
+        "title": "Carbon Emissions and Large Neural Network Training",
+        "url": "https://arxiv.org/pdf/2104.10350",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.7214131951332092,
+        "text": "Most companies spend more energy on serving a DNN model (performing inference) than on training it. For example, NVIDIA estimated that 80–90% of the ML workload is inference processing [Leo19]. Similarly, Amazon Web services claimed that 90% of the ML demand in the cloud is for inference [Bar19]. Given its substantial role in the ML model lifecycle, Alibaba, Amazon, Google, and NVIDIA designed ML accelerators solely for inference. If the total ML energy is split 10% on training and 90% on serving, then even if a given ML model required double the energy cost of training, it could reduce ove..."
+      }
+    ],
+    "expected_answer_value": "90"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: The AI Act requires providers to report both training and inference energy consumption for general-purpose AI models.",
+    "answer": "False",
+    "answer_value": "0",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "ebert2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2410.06681"
+    ],
+    "explanation": "The evidence clearly states that the AI Act does not require reporting of energy consumption during the inference phase, which directly contradicts the statement in the question.",
+    "supporting_materials": "The AI Act requires providers of general-purpose AI models to meet transparency obligations... However, this requirement exhibits a significant gap as it only covers the energy used during the model’s development phase, but leaves out the inference phase.",
+    "top_score": 0.7305353879928589,
+    "evidence": [
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.7305353879928589,
+        "text": "1) For high-risk AI systems, pursuant to Article 11(1) providers must document the computational resources utilized during the development, training, testing, and validation stages, as outlined in Annex IV(2) which does, however, not include the energy consumption directly [4]. This omission hinders the capacity to evaluate and compare the environmental impact of such systems accurately. As a result, the environmental footprint must be estimated indirectly based on the recorded computational resources.\n\n2) The AI Act requires providers of general-purpose AI models to meet transparency oblig..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.7302864789962769,
+        "text": "2) The AI Act requires providers of general-purpose AI models to meet transparency obligations. Article 53(1)(a) mandates that providers maintain up-to-date technical documentation, including the details outlined in Annex XI. This annex requires the reporting of energy consumption, whether known or estimated, while estimates may be based on the computational resources used. However, this requirement exhibits a significant gap as it only covers the energy used during the model’s development phase, but leaves out the inference phase [4]. Recent research has shown that energy consumption durin..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.7222192287445068,
+        "text": "As a caveat, it should be noted that, while the AI Act requires climate risk assessment and mitigation, no detailed reporting is mandated. For HRAI systems the documentation must comprise a detailed _description_ of the risk management system, but not the risk assessment or its results (Annex IV(5)). Providers of GPAI models with systemic risk may rely on codes of practice or European harmonized standards, both of which are not yet available, or alternative means of compliance for assessment by the Commission (Art. 55(2)). If these will entail a detailed reporting of the risk assessment, an..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          7,
+          7
+        ],
+        "score": 0.7206038236618042,
+        "text": "Startups and smaller companies are expected to either directly deploy such models, use available API services of leading model providers, or fine-tune existing models. Although these companies do not typically train large models themselves, they must report energy consumption for fine-tuning. Under our proposed interpretation, however, only if the fine-tuning of a model leads to a substantial modification.\n\n## **6.2 Levels for Measuring and Estimating Energy Consumption**"
+      },
+      {
+        "doc_id": "zschache2025",
+        "title": "Comparing energy consumption and accuracy in text classification inference",
+        "url": "https://arxiv.org/pdf/2508.14170",
+        "pages": [
+          22,
+          22
+        ],
+        "score": 0.7192577123641968,
+        "text": "While energy consumption and the associated carbon footprint remain crucial considerations for sustainable AI, truly planet-centered LLMs must meet a broader set of requirements that go beyond mere efficiency. These include other limited resources (water, rare-earth metals, landuse,. . . ), transparency, accessibility, ethical considerations, and technical adaptability to ensure responsible and sustainable AI deployment (Falk et al., 2025).\n\nTransparency in AI models is essential for trust and reproducibility (Raji et al., 2020). The predictions of traditional models are generally more tran..."
+      }
+    ],
+    "expected_answer_value": "0"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: The AI Act currently requires providers to report energy use during the inference phase of AI models.",
+    "answer": "False",
+    "answer_value": "0",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "ebert2024"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2410.06681"
+    ],
+    "explanation": "The evidence clearly states that while the AI Act requires energy consumption reporting during the development phase, it does not include the inference phase, thus supporting the conclusion that the statement is false.",
+    "supporting_materials": "The Act does not mandate the disclosure of energy consumption during the inference phase, a crucial omission given the long-term environmental impact of AI applications.",
+    "top_score": 0.7292843461036682,
+    "evidence": [
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.7292843461036682,
+        "text": "1) For high-risk AI systems, pursuant to Article 11(1) providers must document the computational resources utilized during the development, training, testing, and validation stages, as outlined in Annex IV(2) which does, however, not include the energy consumption directly [4]. This omission hinders the capacity to evaluate and compare the environmental impact of such systems accurately. As a result, the environmental footprint must be estimated indirectly based on the recorded computational resources.\n\n2) The AI Act requires providers of general-purpose AI models to meet transparency oblig..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.7290891408920288,
+        "text": "2) The AI Act requires providers of general-purpose AI models to meet transparency obligations. Article 53(1)(a) mandates that providers maintain up-to-date technical documentation, including the details outlined in Annex XI. This annex requires the reporting of energy consumption, whether known or estimated, while estimates may be based on the computational resources used. However, this requirement exhibits a significant gap as it only covers the energy used during the model’s development phase, but leaves out the inference phase [4]. Recent research has shown that energy consumption durin..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          14,
+          14
+        ],
+        "score": 0.7227548956871033,
+        "text": "Kai Ebert, Nicolas Alder, Ralf Herbrich, and Philipp Hacker\n\n## **B Policy Proposals Overview**\n\n**Table 1: Summary of Policy Proposals for AI and Environmental Impact**\n\n|**Area**|**Policy Proposal and Description**|\n|---|---|\n|**Energy and Environmental**<br>**Reporting**|**Energy consumption from inferences**: Include energy consumption from<br>both single and cumulative inferences in reporting.<br>**Indirect emissions and water consumption**: Mandate reporting of indirect<br>emissions and water use in AI applications.<br>**Cumulative server energy reporting**: Require energy consumption..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.7222030758857727,
+        "text": "As a caveat, it should be noted that, while the AI Act requires climate risk assessment and mitigation, no detailed reporting is mandated. For HRAI systems the documentation must comprise a detailed _description_ of the risk management system, but not the risk assessment or its results (Annex IV(5)). Providers of GPAI models with systemic risk may rely on codes of practice or European harmonized standards, both of which are not yet available, or alternative means of compliance for assessment by the Commission (Art. 55(2)). If these will entail a detailed reporting of the risk assessment, an..."
+      },
+      {
+        "doc_id": "ebert2024",
+        "title": "AI, Climate, and Regulation: From Data Centers to the AI Act",
+        "url": "https://arxiv.org/pdf/2410.06681",
+        "pages": [
+          6,
+          6
+        ],
+        "score": 0.7188329100608826,
+        "text": "Overall, while the AI Act introduces valuable steps toward addressing climate-related concerns in AI development and deployment, it falls short of establishing a comprehensive framework for mitigating the environmental risks posed by AI systems. Key provisions on transparency and risk management for high-risk AI and general-purpose AI systems make some progress in requiring documentation of computational resources and energy consumption, but significant gaps remain. For example, the Act does not mandate the disclosure of energy consumption during the inference phase, a crucial omission give..."
+      }
+    ],
+    "expected_answer_value": "0"
+  },
+  {
+    "mode": "llm",
+    "question": "True or False: New AI data centers often rely on air cooling due to high server power densities.",
+    "answer": "False",
+    "answer_value": "0",
+    "answer_unit": "is_blank",
+    "ref_id": [
+      "li2025b"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2304.03271"
+    ],
+    "explanation": "The evidence clearly states that new AI data centers typically use liquid cooling methods rather than air cooling due to the high power densities of the servers, directly contradicting the statement in the question.",
+    "supporting_materials": "In general, new data centers dedicated to AI training often rely on liquid cooling due to the high server power densities.",
+    "top_score": 0.7309810519218445,
+    "evidence": [
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7309810519218445,
+        "text": "In the server-level cooling stage, heat is transferred from the servers to the facility or a heat exchanger, typically using either air or liquid cooling methods (e.g., direct-to-chip cooling or immersion cooling), which do not evaporate or consume water. In general, new data centers dedicated to AI training often rely on liquid cooling due to the high server power densities.\n\nIn the facility-level cooling stage, heat is rejected from the data center facility to the outside environment. While there are various cooling methods, water-intensive cooling towers and water evaporation-assisted ai..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.7309749126434326,
+        "text": "Nearly all the server energy is converted into heat, which must then be removed from the data center server room to avoid overheating. This process involves two sequential stages: server-level cooling followed by facility-level cooling.\n\nIn the server-level cooling stage, heat is transferred from the servers to the facility or a heat exchanger, typically using either air or liquid cooling methods (e.g., direct-to-chip cooling or immersion cooling), which do not evaporate or consume water. In general, new data centers dedicated to AI training often rely on liquid cooling due to the high serv..."
+      },
+      {
+        "doc_id": "luccioni2025a",
+        "title": "From Efficiency Gains to Rebound Effects: The Problem of Jevons' Paradox in AI's Polarized Environmental Debate",
+        "url": "https://arxiv.org/pdf/2501.16548",
+        "pages": [
+          2,
+          2
+        ],
+        "score": 0.5510803461074829,
+        "text": "_AI is using increasing amounts of energy, most of it generated from nonrenewable sources._ Data from the International Energy Agency (IEA) has provided the strongest international benchmark. They note that the electricity demand from data centers, driven heavily by AI training and inference, is currently at 2% of total global electricity and will more than double by 2026, surpassing Canada’s national power use [45, 56]. This growth is putting strain on energy grids around the world and resulting in many countries, such as Ireland and the Netherlands, placing a moratorium on the constructio..."
+      },
+      {
+        "doc_id": "stone2022",
+        "title": "Artificial Intelligence and Life in 2030: The One Hundred Year Study on Artificial Intelligence",
+        "url": "https://arxiv.org/pdf/2211.06318",
+        "pages": [
+          51,
+          51
+        ],
+        "score": 0.5259547233581543,
+        "text": "Early conceptual progress assumed the existence of a symbolic system that could be reasoned about and built upon. But by the 1980s, despite this promising headway made into different aspects of artificial intelligence, the field still could boast no significant _practical_ successes. This gap between theory and practice arose in part from an insufficient emphasis within the AI community on _grounding_ systems physically, with direct access to environmental signals and data. There was also an overemphasis on Boolean (True/False) logic, overlooking the need to quantify uncertainty. The field..."
+      },
+      {
+        "doc_id": "li2025b",
+        "title": "Making AI Less 'Thirsty': Uncovering and Addressing the Secret Water Footprint of AI Models",
+        "url": "https://arxiv.org/pdf/2304.03271",
+        "pages": [
+          3,
+          3
+        ],
+        "score": 0.5231176614761353,
+        "text": "For cooling towers, water withdrawal refers to _are only for illustration purposes._ the amount of added water, including both evaporated water and discharged water, while water consumption exclusively indicates the amount of evaporated water. With good water quality, roughly 80% of water withdrawal is evaporated and considered “consumption” [4]. On average, depending on the weather conditions and operational settings, data centers can evaporate approximately 1 – 9 liters per kWh of server energy: 1 L/kWh for Google’s annualized global on-site water efficiency [4] and 9 L/kWh for a large co..."
+      }
+    ],
+    "expected_answer_value": "0"
+  },
+  {
+    "mode": "llm",
+    "question": "By what factor did platform-level caching improve the power efficiency of the inference workload for the cross-lingual Transformer language model described in Wu et al. (2021)?",
+    "answer": "6.7",
+    "answer_value": "6.7",
+    "answer_unit": "multiplier",
+    "ref_id": [
+      "wu2021a"
+    ],
+    "ref_url": [
+      "https://arxiv.org/pdf/2111.00364"
+    ],
+    "explanation": "The evidence clearly states that platform-level caching leads to a 6.7 times improvement in power efficiency for the inference workload, directly answering the question about the factor of improvement.",
+    "supporting_materials": "Starting with a CPU server baseline, application-level caching improves power efficiency by 6.7 _×_.",
+    "top_score": 0.7144753932952881,
+    "evidence": [
+      {
+        "doc_id": "wu2021a",
+        "title": "Sustainable AI: Environmental Implications, Challenges and Opportunities",
+        "url": "https://arxiv.org/pdf/2111.00364",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.7144753932952881,
+        "text": "- **Platform-Level Caching.** Starting with a CPU server baseline, application-level caching improves power efficiency by 6.7 _×_ . These improvements are a result of precomputing and caching frequently accessed embeddings for language translation tasks. Using DRAM and Flash storage devices as caches, these pre-computed embeddings can be shared across applications and use cases.\n\n- **GPU acceleration.** In addition to caching, deploying LM across GPU-based specialized AI hardware unlocks an additional 10.1 _×_ energy efficiency improvement."
+      },
+      {
+        "doc_id": "wu2021a",
+        "title": "Sustainable AI: Environmental Implications, Challenges and Opportunities",
+        "url": "https://arxiv.org/pdf/2111.00364",
+        "pages": [
+          5,
+          5
+        ],
+        "score": 0.6636672616004944,
+        "text": "**Optimizing the Carbon Footprint of LMs:** We dive into a specific machine learning task at Facebook: language translation using a Transformer-based architecture (LM). LM is designed based on the state-of-the-art cross-lingual understanding through self-supervision. Figure 7 analyzes the power footprint improvements over a collection of optimization steps for LM: _platform-level caching_ , _GPU acceleration_ , _low precision format on accelerator_ , and _model optimization_ . In aggregate the optimizations reduce the infrastructure resources required to serve LM at scale by over 800 _×_ ...."
+      },
+      {
+        "doc_id": "fernandez2025",
+        "title": "Energy Considerations of Large Language Model Inference and Efficiency Optimizations",
+        "url": "https://arxiv.org/pdf/2504.17674",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.6188002228736877,
+        "text": "In contrast to training, inference workloads are higher in variability with variation in request frequencies, batching, input and output sequence lengths executed over diverse hardware platforms at scale; and more complex energy use profiles due to variations in power draw during prefill and decoding stages of generation (Patel et al., 2024). Previous work has investigated the comparative energy cost of machine learning models across various tasks (Luccioni et al., 2024b,a), the energy costs of LMs of various sizes (Samsi et al., 2023; Wu et al., 2025), the effects of hardware configuration..."
+      },
+      {
+        "doc_id": "fernandez2025",
+        "title": "Energy Considerations of Large Language Model Inference and Efficiency Optimizations",
+        "url": "https://arxiv.org/pdf/2504.17674",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.6110646724700928,
+        "text": "In contrast to training, inference workloads are higher in variability with variation in request frequencies, batching, input and output sequence lengths executed over diverse hardware platforms at scale; and more complex energy use profiles due to variations in power draw during prefill and decoding stages of generation (Patel et al., 2024). Previous work has investigated the comparative energy cost of machine learning models across various tasks (Luccioni et al., 2024b,a), the energy costs of LMs of various sizes (Samsi et al., 2023; Wu et al., 2025), the effects of hardware configuration..."
+      },
+      {
+        "doc_id": "fernandez2025",
+        "title": "Energy Considerations of Large Language Model Inference and Efficiency Optimizations",
+        "url": "https://arxiv.org/pdf/2504.17674",
+        "pages": [
+          9,
+          9
+        ],
+        "score": 0.5841765403747559,
+        "text": "due to the large singular costs of model developments (Strubell et al., 2020; Wang et al., 2023; Luccioni et al., 2023; Faiz et al., 2023); with large industrial developers similarly reporting the energy required for pretraining (OLMo et al., 2024; Morrison et al., 2025; Dubey et al., 2024).\n\nIn contrast to training, inference workloads are higher in variability with variation in request frequencies, batching, input and output sequence lengths executed over diverse hardware platforms at scale; and more complex energy use profiles due to variations in power draw during prefill and decoding s..."
+      }
+    ],
+    "expected_answer_value": "6.7"
+  }
+]
